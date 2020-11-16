@@ -1,7 +1,23 @@
 body{
     background-image: url("image/fond2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-aside{
-    background-color: rgba(255,255, 240, 0,8);
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+header>nav{
+    
+}
+
+article{
+    background-color: rgba(255,255, 240, 0.9);
+    width: 90%;
+    left:5%;
+    right:5%;
+    /*font-size: 30px;*/
 }
