@@ -8,10 +8,31 @@ header{
     background-color: white;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
-header>nav{
-    
+
+
+nav > a{
+    width: 100px;
+    text-align: justify;
+    border: 2px solid black;
+}
+
+
+
+.submenu{
+    display: none;
+}
+
+nav > div:hover .submenu{
+    display: inline;/*Ne marche pas pour l'instant !*/
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 article{
