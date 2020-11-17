@@ -1,7 +1,13 @@
 body{
-    background-image: url("image/fond2.jpg");
+    background-image: url("images/fond2.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 100%;
+}
+@media screen and (max-width:500px){
+    body{
+        background-image: url("images/fond.jpg");
+    }
 }
 
 header{
@@ -48,9 +54,10 @@ nav > div:hover .submenu{
 
 article{
     background-color: rgba(255,255, 240, 0.9);
-    width: 90%;
+    /*width: 90%;*/
     height: 1000px;
     left:5%;
     right:5%;
+    /*flex-grow: 1;*/
     /*font-size: 30px;*/
 }
