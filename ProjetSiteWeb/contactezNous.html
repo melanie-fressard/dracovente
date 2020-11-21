@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><title>Contactez nous</title><meta charset="UTF-8"> <link rel="stylesheet" type="text/css" href="style.css"></head>
+<body>
+
+<form action="machin.php" method="get">
+	<fieldset>
+	<legend>Informations personnelles</legend>
+<label for="surname">Nom* :</label>
+	<input id="surname" name="uname" type="text" required="*"><br><br>
+
+<label for="firstname">Prénom :</label>
+	<input id="firstname" name="firstname" type="text"><br><br>
+
+<label for="mail">Email* :</label>
+	<input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required="*"><br><br>
+
+<label for="surname">Code Postal :</label>
+	<input id="surname" name="uname" type="text" required="*"><br><br>
+
+<label for="country-select">Lieu de résidence :</label>
+
+<select name="country" id="country-select">
+    <option value="">--Choisissez une option--</option>
+    <option value="de">Allemagne</option>
+    <option value="au">Australie</option>
+    <option value="br">Brésil</option>
+    <option value="ca">Canada</option>
+	<option value="ch">Chine</option> 
+	<option value="eg">Egypte</option>
+	<option value="es">Espagne</option>
+	<option value="fr">France</option>
+	<option value="in">Inde</option>
+	<option value="jp">Japon</option>
+	<option value="po">Portugal</option>
+    <option value="uk">Royaume-Uni</option>
+    <option value="su">Russie</option>
+    <option value="tv">Tuvalu</option>
+    <option value="us">USA</option>
+</select><br><br>
+</fieldset>
+	
+<label for="where-select">Comment avez-vous entendu parler de notre société ?</label><br>
+  <input id="where" name="web" type="checkbox">Notre site Web
+  <input id="where" name="resc" type="checkbox">Un moteur de recherche <br>
+  <input id="where" name="reco" type="checkbox">Une recommandation
+  <input id="where" name="emp" type="checkbox">Par l’un de nos employés<br>
+  <input id="where" name="med" type="checkbox">Par les médias<br>
+  <input id="where" name="other" type="checkbox">Autre : <input id="other" name="texteother" type="text">
+  <br><br>
+
+	
+<label for="date">Date à laquelle vous souhaitez être recontacté</label>
+	<input id="date" name="date" type="date"><br><br>
+
+<label for="message">Votre message :</label><br>
+	<textarea name="message" placeholder="Ecrivez votre message ici !"></textarea><br><br>
+
+</body>
+</html>
