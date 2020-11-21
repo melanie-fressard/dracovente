@@ -9,13 +9,15 @@ body{
     right: 10%;*/
 
 }
+
+/*PARTIE I : Gestion des tailles des écrans*/
 @media screen and (max-width:999px){
     body{
         background-image: url("images/fond.jpg");
         background-color: black;
-        width: 80%;
+        /*width: 80%;
         left: 10%;
-        right: 10%;
+        right: 10%;*/
     }
     a{
         font-size: 100%;
@@ -31,6 +33,7 @@ body{
 
  }
 
+ /*PARTIE II : Le Header commun à toutes les pages*/
 header{
     display: flex;
     flex-direction: row;
@@ -74,15 +77,12 @@ nav > div:hover .submenu{
     display: inline;/*Ne marche pas pour l'instant !*/
 }
 
+/*Fin de la partie 2*/
+
+
 
 article{
-    top:500px;
+    margin: 50px 4% 0px 4%;/*A mettre pour les grand écrans uniquement*/
     background-color: rgba(255,255, 240, 0.5);
     height: 1000px;
-    
-    /*width: 80%;
-    left:10%;
-    right:10%;*/
-    /*flex-grow: 1;*/
-    /*font-size: 30px;*/
 }
