@@ -1,50 +1,26 @@
 body{
-    background-image: url("images/fond2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
-    /*width: 80%;
-    left: 10%;
-    right: 10%;*/
+    background-image: url("images/fond2.jpg"); 
+    background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
+    background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
+    background-size: 100%;/*Le fond prend toujours 100% de l'ecran, qu'importe le zoom*/
+    /*height: 100%;*//*Ne change rien, je ne sais plus pourquoi je l'avais mit*/
+
 
 }
 
-/*PARTIE I : Gestion des tailles des écrans*/
-@media screen and (max-width:999px){
-    body{
-        background-image: url("images/fond.jpg");
-        background-color: black;
-        /*width: 80%;
-        left: 10%;
-        right: 10%;*/
-    }
-    a{
-        font-size: 100%;
-    }
-}
 
-@media screen and (max-width:540px) { 
-    body{
-        background-attachment: fixed;
-        background-image: none;
-        background-color: black;
-    }
 
- }
-
- /*PARTIE II : Le Header commun à toutes les pages*/
+ /*PARTIE I : Le Header commun à toutes les pages*/
 header{
-    display: flex;
+    display: flex;/*Alignement de son contenu*/
     flex-direction: row;
 
 }
 
 
 nav{
-    position: fixed;
-
-    width: 80%;
+    position: fixed;/*On bloque le menu en haut de l'écran*/
+    width: 80%;/*Largeur à remettre à 100% sur les petits écrans*/
     left: 10%;
     right: 10%;
     display: flex;
@@ -86,3 +62,33 @@ article{
     background-color: rgba(255,255, 240, 0.5);
     height: 1000px;
 }
+
+
+/*PARTIE II : Gestion des tailles des écrans*/
+@media screen and (max-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
+    body{
+        background-image: url("images/fond.jpg");
+        background-color: black;
+    }
+    a{
+        font-size: 100%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
+    }
+    nav{
+        width: 100%;/*On évite de perdre lde la place sur les petits écrants*/
+        left: 0%;
+        right: 0%;
+    }
+
+    article{
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width:540px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
+    body{
+        background-attachment: fixed;
+        background-image: none;/*Supprimer les images sur les écrants vraiment petits*/
+        background-color: black;
+    }
+
+ }
