@@ -23,22 +23,21 @@ nav{
     width: 80%;/*Largeur à remettre à 100% sur les petits écrans*/
     left: 10%;
     right: 10%;
+    height: 45px;
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    background-color: #FAAA6D;
+    padding: auto;
 }
 
-nav > a{
+nav > a, nav>div{/*Il faut encore régler un soucis de couleur sur le nous rejoindre */
+    background-color: #FAAA6D;
     width: 16%;
     text-align: center;
-    border: 2px solid black;
+    border-radius: 15px;
     flex-grow: 1;
-}
-nav > div{
-    width: 16%;
-    text-align: center;
-    border: 2px solid black;
+    margin: 5px 5px 5px 5px;
+    color: red;
 }
 
 a{
@@ -47,10 +46,23 @@ a{
 
 .submenu{
     display: none;
+    margin: 0px 0px 0px 0px;
+    background-color: #FAAA6D;
+    border-top: none;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
-nav > div:hover .submenu{
-    display: inline;/*Ne marche pas pour l'instant !*/
+nav>div:hover .submenu{
+
+    display: block;
+}
+
+nav>div.conteneur:hover {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
 }
 
 /*Fin de la partie 2*/
