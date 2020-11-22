@@ -30,18 +30,23 @@ nav{
     padding: auto;
 }
 
-nav > a, nav>div{/*Il faut encore régler un soucis de couleur sur le nous rejoindre */
+nav > a, nav>div{
     background-color: #FAAA6D;
     width: 16%;
     text-align: center;
     border-radius: 15px;
     flex-grow: 1;
     margin: 5px 5px 5px 5px;
-    color: red;
 }
 
 a{
     font-size: 150%;
+}
+
+nav>a, nav div a:-webkit-any-link {
+    color: rgb(151, 14, 10);
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .submenu{
