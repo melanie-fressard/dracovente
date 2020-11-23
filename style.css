@@ -8,6 +8,7 @@ body{
     background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
     /*background-size: 100%;*//*Le fond prend toujours 100% de l'ecran, qu'importe le zoom*/
     /*height: 100%;*//*Ne change rien, je ne sais plus pourquoi je l'avais mit*/
+    background-color: black;
 }
 
 
@@ -50,7 +51,7 @@ a{
     font-size: 150%;
 }
 
-nav>div a:-webkit-any-link {
+a:-webkit-any-link {
     color: rgb(151, 14, 10);
     cursor: pointer;
     text-decoration: underline;
@@ -92,18 +93,22 @@ nav>div.conteneur:hover {
 
 article{
     margin: 50px 4% 0px 4%;/*A mettre pour les grand écrans uniquement*/
-    background-color: rgba(255,255, 240, 0.5);
+    background-color: rgba(255,255, 240, 0.9);
 }
 
 
 /*PARTIE II : Gestion des tailles des écrans*/
-@media screen and (max-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
-    body{
-        background-image: url("images/fond.jpg");
-        background-color: black;
-    }
+@media (max-width:999px) and (min-width:541){/*Si la largeur de l'écran est suppérieur à 999px*/
+
     a{
         font-size: 150%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
+    }
+}
+
+@media (max-width:745px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
+    body{
+        background-attachment: fixed;
+        background-image: none;/*Supprimer les images sur les écrants vraiment petits*/
     }
     nav{
         /*width: 100%; Inutile si on utilise un burger
@@ -113,35 +118,38 @@ article{
     }
 
     article{
-        margin: 30px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
     }
 
     div.burger{
         display: inline;
         position: fixed;
         left :75%;
+        right: 2%;
         top : 2%;
         z-index: 2;
-        width: 80vw;
-        height: 100vh;
+
     }
+    div.burger:hover{
+        background-color: rgb(199, 199, 199);
+        padding: 5px 5px 5px 5px;
+        margin-left: -50px;
+    }
+
     div.burger>div#menu2{
         display: none;
-    
+        width: 100%;
+        position: relative;
+
     }
-    div.burger:hover div#menu2{
+
+    header>div.burger:hover div#menu2{
         margin-left: 0px;
         display: inline;
+        /*margin-right: -250px;*/
+        /*right: 10%;*/
     }
-
-
-}
-
-@media screen and (max-width:540px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
-    body{
-        background-attachment: fixed;
-        background-image: none;/*Supprimer les images sur les écrants vraiment petits*/
-        background-color: black;
+    header>div.burger:hover div#menu2 a{
+    border-top: none;
     }
-
  }
