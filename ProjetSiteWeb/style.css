@@ -42,6 +42,7 @@ nav > div{
 
 nav > div:hover{/*Augmente la taille de l'élement sur lequel la souris passe*/
     flex-grow: 2;
+    transition:800ms ;
 }
 
 
@@ -72,7 +73,8 @@ nav>div:hover .submenu{
 
 nav div a:hover{/*Met en gras et en couleur la fiche métier sur laquelle passe la souris*/
     font-weight: bolder;
-    color: blue;
+    color: #419EAE;
+    
 }
 
 nav>div.conteneur:hover {
