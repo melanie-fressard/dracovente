@@ -30,20 +30,24 @@ nav{
     padding: auto;
 }
 
-nav > a, nav>div{
+nav > div{
     background-color: #FAAA6D;
-    width: 16%;
     text-align: center;
     border-radius: 15px;
     flex-grow: 1;
     margin: 5px 5px 5px 5px;
 }
 
+nav > div:hover{/*Augmente la taille de l'élement sur lequel la souris passe*/
+    flex-grow: 2;
+}
+
+
 a{
     font-size: 150%;
 }
 
-nav>a, nav div a:-webkit-any-link {
+nav>div a:-webkit-any-link {
     color: rgb(151, 14, 10);
     cursor: pointer;
     text-decoration: underline;
@@ -60,14 +64,18 @@ nav>a, nav div a:-webkit-any-link {
 }
 
 nav>div:hover .submenu{
-
     display: block;
+    font-weight: normal;/*Empèche les submenus de se mettre en gras quand la souris passe dessus*/
+}
+
+nav div a:hover{/*Met en gras et en couleur la fiche métier sur laquelle passe la souris*/
+    font-weight: bolder;
+    color: blue;
 }
 
 nav>div.conteneur:hover {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-
 }
 
 /*Fin de la partie 2*/
