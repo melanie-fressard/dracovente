@@ -6,7 +6,7 @@ body{
     background-image: url("images/fond2.jpg"); 
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
-    background-size: 100%;/*Le fond prend toujours 100% de l'ecran, qu'importe le zoom*/
+    /*background-size: 100%;*//*Le fond prend toujours 100% de l'ecran, qu'importe le zoom*/
     /*height: 100%;*//*Ne change rien, je ne sais plus pourquoi je l'avais mit*/
 }
 
@@ -82,6 +82,10 @@ nav>div.conteneur:hover {
     border-bottom-right-radius: 0px;
 }
 
+.burger{
+    display: none;
+}
+
 /*Fin de la partie 2*/
 
 
@@ -89,7 +93,6 @@ nav>div.conteneur:hover {
 article{
     margin: 50px 4% 0px 4%;/*A mettre pour les grand écrans uniquement*/
     background-color: rgba(255,255, 240, 0.5);
-    height: 1000px;
 }
 
 
@@ -100,17 +103,38 @@ article{
         background-color: black;
     }
     a{
-        font-size: 100%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
+        font-size: 150%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
     }
     nav{
-        width: 100%;/*On évite de perdre lde la place sur les petits écrants*/
+        /*width: 100%; Inutile si on utilise un burger
         left: 0%;
-        right: 0%;
+        right: 0%;*/
+        display: none;
     }
 
     article{
         margin: 30px 0px 0px 0px;
     }
+
+    div.burger{
+        display: inline;
+        position: fixed;
+        left :75%;
+        top : 2%;
+        z-index: 2;
+        width: 80vw;
+        height: 100vh;
+    }
+    div.burger>div#menu2{
+        display: none;
+    
+    }
+    div.burger:hover div#menu2{
+        margin-left: 0px;
+        display: inline;
+    }
+
+
 }
 
 @media screen and (max-width:540px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
