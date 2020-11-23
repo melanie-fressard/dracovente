@@ -1,7 +1,3 @@
-
-
-
-
 body{
     background-image: url("images/fond2.jpg"); 
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
@@ -119,3 +115,15 @@ article{
     }
 
  }
+
+
+
+h1{
+	background-color: #3D7DCA;
+	color: #FFCB05;
+}
+
+.depeyre{background-color: #FFAD00}
+.fressard{background-color: #F59BAD}
+.gavioli{background-color: #3B4CCA}
+.viguier{background-color: #FF0000}
