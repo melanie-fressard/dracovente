@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head><title>Contactez nous</title><meta charset="UTF-8"> <link rel="stylesheet" type="text/css" href="style.css"></head>
+<body>
+	<header>
+        <nav>
+                <a href="./index.html" id="sans-bordure">Accueil</a>
+                
+                    <a href="./contactp.html">Contacts</a>
+               
+                    <a href="./equipe.html">Équipe</a>
+                
+                    <a href="./Produit.html">Produit</a>
+            
+                    <a href="./Presse.html">Presse</a>
+            
+                    <div class="conteneur">
+                        <a href="./nousRejoindre.html">Nous Rejoindre</a>
+                                    
+                    <div class="submenu">
+                        <div><a href="./metierI.html">metierI</a></div>
+                        <div><a href="./metierII.html">metierII</a></div>
+                        <div><a href="./metierIII.html">metierIII</a></div>
+                    </div>
+                </div>
+
+            </nav>
+    </header>
+<article>
+<form action="machin.php" method="get">
+	<fieldset>
+	<legend>Informations personnelles</legend>
+<div><label for="surname">Nom* :</label>
+	<input id="surname" name="uname" type="text" required="*"></div><br>
+
+<div><label for="firstname">Prénom :</label>
+	<input id="firstname" name="firstname" type="text"></div><br>
+
+<div><label for="mail">Email* :</label>
+	<input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required="*"></div><br>
+
+<div><label for="code">Code Postal :</label>
+	<input id="code" name="postal" type="text"></div><br>
+
+<div><label for="country-select">Lieu de résidence :</label></div><br>
+
+<div><select name="country" id="country-select">
+    <option value="">--Choisissez une option--</option>
+    <option value="de">Allemagne</option>
+    <option value="au">Australie</option>
+    <option value="br">Brésil</option>
+    <option value="ca">Canada</option>
+	<option value="ch">Chine</option> 
+	<option value="eg">Egypte</option>
+	<option value="es">Espagne</option>
+	<option value="fr">France</option>
+	<option value="in">Inde</option>
+	<option value="jp">Japon</option>
+	<option value="po">Portugal</option>
+    <option value="uk">Royaume-Uni</option>
+    <option value="su">Russie</option>
+    <option value="tv">Tuvalu</option>
+    <option value="us">USA</option>
+</select></div><br>
+</fieldset>
+	
+<div><label for="where-select">Comment avez-vous entendu parler de notre société ?</label></div><br>
+  <div><input id="where" name="web" type="checkbox">Notre site Web</div>
+  <div><input id="where" name="resc" type="checkbox">Un moteur de recherche</div>
+  <div><input id="where" name="reco" type="checkbox">Une recommandation</div>
+  <div><input id="where" name="emp" type="checkbox">Par l’un de nos employés</div>
+  <div><input id="where" name="med" type="checkbox">Par les médias</div>
+  <div><input id="where" name="other" type="checkbox">Autre : <input id="other" name="texteother" type="text">
+  </div><br>
+
+	
+<div><label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
+	<input id="date" name="date" type="date" required="*"></div><br>
+
+<div><label for="message">Votre message* :</label><br>
+	<textarea name="message" placeholder="Ecrivez votre message ici !" required="*"></textarea></div><br>
+  <input type="submit" value="Envoyer">
+</article>
+</body>
+</html>
