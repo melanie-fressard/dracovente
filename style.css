@@ -30,7 +30,6 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    padding: auto;
 }
 
 nav > div{
@@ -98,14 +97,14 @@ article{
 
 
 /*PARTIE II : Gestion des tailles des écrans*/
-@media (max-width:999px) and (min-width:541){/*Si la largeur de l'écran est suppérieur à 999px*/
+@media (max-width:999px) and (min-width:541px){/*Si la largeur de l'écran est suppérieur à 999px*/
 
     a{
         font-size: 150%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
     }
 }
 
-@media (max-width:745px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
+@media screen and (max-width:745px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
     body{
         background-attachment: fixed;
         background-image: none;/*Supprimer les images sur les écrants vraiment petits*/
@@ -131,7 +130,7 @@ article{
 
     }
     div.burger:hover{
-        background-color: rgb(199, 199, 199);
+        background-color: #FAAA6D;
         padding: 5px 5px 5px 5px;
         margin-left: -50px;
     }
