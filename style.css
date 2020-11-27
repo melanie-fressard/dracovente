@@ -1,6 +1,12 @@
 
 
 
+/*PARTIE II : Gestion des tailles des écrans*/
+@media screen and (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
+
+    a{
+        font-size: 150%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
+    }
 
 body{
     background-image: url("images/fond2.jpg"); 
@@ -93,21 +99,17 @@ nav>div.conteneur:hover {
 article{
     margin: 50px 4% 0px 4%;/*A mettre pour les grand écrans uniquement*/
     background-color: rgba(255,255, 240, 0.9);
+    font-size: 20px;
+}
 }
 
 
-/*PARTIE II : Gestion des tailles des écrans*/
-@media (max-width:999px) and (min-width:541px){/*Si la largeur de l'écran est suppérieur à 999px*/
 
-    a{
-        font-size: 150%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
-    }
-}
-
-@media screen and (max-width:745px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
+@media screen and (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
     body{
         background-attachment: fixed;
         background-image: none;/*Supprimer les images sur les écrants vraiment petits*/
+        font-size: 20px;
     }
     nav{
         /*width: 100%; Inutile si on utilise un burger
@@ -120,14 +122,17 @@ article{
         margin: 0px 0px 0px 0px;
     }
 
+    header{
+        width: 800px;
+    }
+
     div.burger{
+        width: 800px;
         display: inline;
         position: fixed;
-        left :75%;
-        right: 2%;
+        left :70%;
         top : 2%;
         z-index: 2;
-
     }
     div.burger:hover{
         background-color: #FAAA6D;
@@ -135,11 +140,15 @@ article{
         margin-left: -50px;
     }
 
+    /*div.burger>img{
+        width: 100px;
+    }*/
+
     div.burger>div#menu2{
         display: none;
-        width: 100%;
+        width: 800px;
         position: relative;
-
+        font-size: 50px;
     }
 
     header>div.burger:hover div#menu2{
