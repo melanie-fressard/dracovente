@@ -157,22 +157,26 @@ body{
     background-color: black;
 }
 
-
-/*PARTIE III : ce qui est propre à la page*/
+/*PARTIE III : ce qui est propre à cette page*/
 h1{
 	background-color: #3D7DCA; /*Change la couleur de font*/
 	color: #FFCB05; /*Change la couleur du texte*/
     text-align: center; /*Mets le texte au centre*/
 }
 
-h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
+h2{
+    background-color: #FFAD00;
+    text-indent: 10px;
+}
 
-/*Classes des personnes*/
-.depeyre{background-color: #FFAD00}
-.fressard{background-color: #F59BAD}
-.gavioli{background-color: #3B4CCA}
-.viguier{background-color: #FF0000}
-
+h3{
+    color: blue;
+    text-indent: 10px;
+}
 p {
-    text-indent: 20px; /*Alinéa*/
+    text-indent: 10px;
+}
+
+.blockquote {
+    text-indent: 30px;
 }
