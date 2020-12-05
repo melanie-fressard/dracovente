@@ -139,7 +139,7 @@ article{
         width: 800px;
         display: inline;
         position: fixed;
-        left :70%;
+        left :85%;
         top : 2%;
         z-index: 2;
     }
@@ -147,6 +147,8 @@ article{
         background-color: #FAAA6D;
         padding: 5px 5px 5px 5px;
         margin-left: -50px;
+        left :70%;
+        font-size: 20px;
     }
 
     /*div.burger>img{
