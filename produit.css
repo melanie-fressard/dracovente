@@ -1,0 +1,133 @@
+@media(max-width: 729px)
+{
+    div#raptincel_block
+    {
+        display: none;
+    }
+}
+
+@font-face
+{
+    font-family: "pokemon";
+    src: url(font/Pokemon\ Solid.ttf);
+}
+
+main
+{
+    width: 80%;
+    background-color: rgba(255,255, 240, 0.9);  /* CHANGER LA COULEUR*/ /* avant : background-color: #F2684A;*/
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    border: solid black 1px;
+}
+
+
+span#slogan                                                             /* crée le contour du slogan */
+{
+    border: #3A3F43 double thick;
+    padding: 10px;
+    font-family: pokemon;
+    color: #53585a;
+}
+
+#img_block
+{
+    display: inline;
+}
+
+.img_dracaufeu
+{
+    width: 20%;
+    height: 20%;
+    border: #3A3F43 solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#draco_x
+{
+    margin-top: 20px;
+}
+
+#draco_o
+{
+    padding-top: 25.39px;
+}
+
+#draco_y
+{
+    padding-top: 19.91px;
+}
+
+.img_dracaufeu:hover
+{
+    border: #3A3F43 solid 3px;
+}
+
+#egg_block
+{
+    background-color: #3A3F43;
+    width: 100%;
+    display: inline-block;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+}
+
+
+#egg_img
+{
+    float: left;
+    margin-left: 50px;
+}
+
+#egg_txt
+{
+    margin: 30px;
+    color: white;
+    text-align: center;
+}
+
+#raptincel_block
+{
+    background-color: #3A3F43;
+    width: 50%;
+    height: 270px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#raptincel_img
+{
+    float:left;
+    margin-left: 10px;
+    background-color:  #727272;
+}
+
+div#raptincel_block > p 
+{
+    color: white;
+    padding: 10px;
+
+}
+
+#order_link
+{
+    text-decoration: none;
+    
+}
+
+#order_txt
+{
+    background-color: #FCC499;
+    border: #b3794e solid 2px;
+    padding: 10px;
+    color: black;
+    border-radius: 25px;
+}
+
+#order_txt:hover
+{
+    color: #215c8d;
+    transition: 0.2s;
+}
