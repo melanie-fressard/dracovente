@@ -1,32 +1,23 @@
-/*PARTIE II : Gestion des tailles des écrans*/
-@media screen and (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
-    body{
 
-        background-color: blueviolet;
-        background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
-        background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
-        /*background-size: 100%;*//*Le fond prend toujours 100% de l'ecran, qu'importe le zoom*/
-        /*height: 100%;*//*Ne change rien, je ne sais plus pourquoi je l'avais mit*/
-    }
-    a{
-        font-size: 100%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
-    }
-    nav{
-        width: 100%;/*On évite de perdre lde la place sur les petits écrants*/
-        left: 0%;
-        right: 0%;
-    }
-
-    article{
-        margin: 30px 0px 0px 0px;
-    }
+:root{
+    --header-color-bg: #FAAA6D;/*La couleur de fond du header et peu-être du footer*/
+    --header-link-hover:#419EAE;/*Couleur des liens quand la sourie passe dessus*/
 }
 
-@media screen and (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
-    body{
-        background-attachment: fixed;
-        background-image: none;/*Supprimer les images sur les écrants vraiment petits*/
-        background-color: black;
-    }
 
- }
+/*Le footer*/
+@media screen and (min-width:999px){
+footer{
+    height: 100px;
+    background-color: var(--header-color-bg);
+    position: fixed;
+    top:97%;
+    width:100%;
+    text-align: center;
+}
+footer>a{
+    font-size: 16px;
+    margin: 0px 30px;
+}
+
+}

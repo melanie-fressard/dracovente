@@ -1,13 +1,13 @@
+:root{
+    --header-color-bg: #FAAA6D;/*La couleur de fond du header et peu-être du footer*/
+    --header-link-hover:#419EAE;/*Couleur des liens quand la sourie passe dessus*/
+}
+
 
 textarea{
     width: 80%;
     min-height: 100px;
 }
-
-
-
-
-
 
 
 
@@ -49,7 +49,7 @@ nav{
 }
 
 nav > div{
-    background-color: #FAAA6D;
+    background-color: var(--header-color-bg);/*On stoque la valeur de la couleur dans une variable pour pouvoir la réutiliser*/
     text-align: center;
     border-radius: 15px;
     flex-grow: 1;
@@ -75,7 +75,7 @@ a:-webkit-any-link {
 .submenu{
     display: none;
     margin: 0px 0px 0px 0px;
-    background-color: #FAAA6D;
+    background-color: var(--header-color-bg);
     border-top: none;
     border-radius: 15px;
     border-top-left-radius: 0px;
@@ -89,7 +89,7 @@ nav>div:hover .submenu{
 
 nav div a:hover{/*Met en gras et en couleur la fiche métier sur laquelle passe la souris*/
     font-weight: bolder;
-    color: #419EAE;
+    color: var(--header-link-hover);
     
 }
 
@@ -102,7 +102,6 @@ nav>div.conteneur:hover {
     display: none;
 }
 
-/*Fin de la partie 2*/
 
 
 
