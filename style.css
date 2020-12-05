@@ -1,4 +1,14 @@
 
+textarea{
+    width: 80%;
+    min-height: 100px;
+}
+
+
+
+
+
+
 
 
 /*PARTIE II : Gestion des tailles des écrans*/
@@ -161,3 +171,8 @@ article{
     border-top: none;
     }
  }
+
+
+ /*************FOOTER**************************/
+
+ 
