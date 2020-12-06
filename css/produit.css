@@ -6,6 +6,14 @@
     }
 }
 
+@media(max-width: 507px)
+{
+    span#slogan
+    {
+        border: white solid 1px;
+    }
+}
+
 @font-face
 {
     font-family: "pokemon";
