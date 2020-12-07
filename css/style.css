@@ -104,7 +104,7 @@ article{
 
 
 
-@media screen and (min-width: 480px) and (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
+@media screen and (min-width: 481px) and (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
     body{
         background-size: 100%;
     }
