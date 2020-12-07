@@ -179,3 +179,28 @@ article{
  /*************FOOTER**************************/
 
  
+@media screen and (min-width:999px){
+    footer{
+        height: 100px;
+        background-color: var(--header-color-bg);
+        position: fixed;
+        top:97%;
+        width:100%;
+        text-align: center;
+    }
+    body footer a.aFooter{
+        font-size: 16px;
+        margin: 0px 30px;
+        color:black;
+    }
+    footer dev{
+        font-size: 16px;
+        margin: 0px 30px;
+    }
+    
+    }
+    
+    @media screen and (max-width:999px){
+        footer{display: none;}
+    
+    }
