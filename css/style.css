@@ -23,7 +23,6 @@ article{
 
 
 
-/*PARTIE II : Gestion des tailles des écrans*/
 @media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
     body{
         background-color: black;
@@ -181,10 +180,7 @@ article{
  
 @media screen and (min-width:999px){
     footer{
-        height: 100px;
         background-color: var(--header-color-bg);
-        position: fixed;
-        top:97%;
         width:100%;
         text-align: center;
     }
