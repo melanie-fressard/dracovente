@@ -7,8 +7,8 @@ article .contact {
 }
 
 .on {
-    display: block;
-    }
+    visibility: visible;
+}
     
     .off {
     display: none;
