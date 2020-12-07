@@ -2,7 +2,10 @@
 <html>
 <head><title>Contactez nous</title><meta charset="UTF-8"> 
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/commandeETcontact.css"></head>
+    <link rel="stylesheet" type="text/css" href="../css/commandeETcontact.css">
+    <script type= "text/javascript" src="../js/script.js"></script>
+</head>
+
 <body>
 	<header>
 
@@ -44,14 +47,19 @@
                 </div>
 
             </nav>
-        </header>
+        </header> <!--header commun-->
+
+<!--les contacts-->
 
 <article>
   <div class="contact">
     <form action="machin.php" method="get">
 
             <fieldset>
-	    <legend>Informations personnelles</legend>
+        <legend>Informations personnelles</legend>
+
+<!--info perso-->
+
 <div><label for="surname">Nom* :</label>
     <input id="surname" name="uname" type="text" required="">
 </div><br>
@@ -89,8 +97,10 @@
     <option value="us">USA</option>
     </select></div><br>
 
-            </fieldset>
-	
+            </fieldset><br>
+    
+<!--partie question-->
+
 <div><label for="where-select">Comment avez-vous entendu parler de notre société ?</label><br><br>
 
   <input id="web" name="where" type="checkbox">Notre site Web<br>
@@ -98,21 +108,38 @@
   <input id="reco" name="where" type="checkbox">Une recommandation<br>
   <input id="emp" name="where" type="checkbox">Par l’un de nos employés<br>
   <input id="med" name="where" type="checkbox">Par les médias<br>
-  <input id="other" name="where" type="checkbox">Autre : <input id="other" name="texteother" type="text">
+  <input id="check" name="where" onChange="verif();" type="checkbox">Autre : 
+
+<!--si la case n'est pas cochée, la case de texte n'apparait pas-->
+
+  <input id="2" class="off" name="where" type="text"></textarea>
+
 </div><br>
 
 <div><label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
     <input id="date" name="date" type="date" required="">
 </div><br>
 
+<!--le message-->
+
 <div><label for="message">Votre message* :</label><br>
     <textarea name="message" placeholder="Ecrivez votre message ici !" required=""></textarea>
 </div><br>
 
+<label for="lu">J’ai bien lu les clauses que je n’ai pas lues*</label>
+<input name="lu" type="checkbox" required="" onChange="echange();">
+  <input type="submit" id="1" class="on" value="Envoyer">
+  <input type="submit" id="3" class="off" value="Envoyer" disabled>
 
-  <input type="submit" value="Envoyer">
 </form>
 </div>
 </article>
+
+<footer>     
+    <dev>© 666-2020</dev>               
+    <a href="#" class="aFooter">Revenir en haut</a>
+    <a href="page/mentionsLegales.html" class="aFooter">Mentions légales</a>
+</footer>
+
 </body>
 </html>

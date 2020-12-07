@@ -80,7 +80,7 @@ article{
     background-color: rgba(255,255, 240, 0.9);
     font-size: 20px;
 }
-}
+
 
 
 
@@ -149,7 +149,7 @@ article{
     }
 
 body{
-    background-image: url("../images/fond2.jpg");
+    background-image: url("../images/fond2.jpg"); 
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
     /*background-size: 100%;*//*Le fond prend toujours 100% de l'ecran, qu'importe le zoom*/
@@ -173,10 +173,16 @@ h3{
     color: blue;
     text-indent: 10px;
 }
+
 p {
     text-indent: 10px;
 }
 
+div {
+    text-indent: 20px;
+    margin-left: 10px;
+}
+
 .blockquote {
     text-indent: 30px;
-}
+}}
