@@ -80,12 +80,9 @@ article{
     background-color: rgba(255,255, 240, 0.9);
     font-size: 20px;
 }
+}
 
-/*Classes des personnes*/
-.depeyre{background-color: #FFAD00}
-.fressard{background-color: #F59BAD}
-.gavioli{background-color: #3B4CCA}
-.viguier{background-color: #FF0000}
+
 
 @media screen and (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
     body{
@@ -152,7 +149,7 @@ article{
     }
 
 body{
-    background-image: url("../images/fond2.jpg");
+    background-image: url("images/fond2.jpg"); 
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
     /*background-size: 100%;*//*Le fond prend toujours 100% de l'ecran, qu'importe le zoom*/
@@ -170,9 +167,12 @@ h1{
 
 h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 
-
+/*Classes des personnes*/
+.depeyre{background-color: #FFAD00}
+.fressard{background-color: #F59BAD}
+.gavioli{background-color: #3B4CCA}
+.viguier{background-color: #FF0000}
 
 p {
     text-indent: 20px; /*Alinéa*/
-}
 }
