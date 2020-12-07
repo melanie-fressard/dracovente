@@ -28,6 +28,6 @@ footer dev{
 }
 
 @media screen and (max-width:999px){
-    footer{visibility: none;}
+    footer{display: none;}
 
 }
