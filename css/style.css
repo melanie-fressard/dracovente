@@ -7,7 +7,6 @@ body{
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
     background-color: black;
-
 }
 
 textarea{
@@ -16,7 +15,7 @@ textarea{
 }
 
 article{
-    margin: 50px 4% 0px 4%;/*A mettre pour les grand écrans uniquement*/
+    margin: 50px 4% 40px 4%;/*A mettre pour les grand écrans uniquement*/
     background-color: rgba(255,255, 240, 0.9);
     font-size: 20px;
 }
