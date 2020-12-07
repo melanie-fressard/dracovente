@@ -83,11 +83,39 @@
     <option value="dry">Y (750.000 ₽)</option>
 </select></div><br>
 
-	<div>Option message personnalisé (+ 50.000 ₽) <input id="opt-select" name="yesmp" type="checkbox"></div><br><!--je comptais mettre plus d'otpions dites moi si vous avez des idées !-->
-
-<div><label for="message">Message personnalisé que va apprendre votre dracaufeu :</label><br>
+  <div>Option message personnalisé (+ 50.000 ₽) <input id="check" type="checkbox" onChange="verif();"></div><br>
+  <!--je comptais mettre plus d'otpions dites moi si vous avez des idées !-->
+<div id="1"> </div>
+<div id="2"><label for="message">Message personnalisé que va apprendre votre dracaufeu :</label><br>
 	<textarea name="message" placeholder="Votre message doit être une phrase simple pour que votre futur meilleur ami puisse l'apprendre avant d'arriver !" rows="5" cols="50"></textarea></div><br>
 </fieldset><br>
+
+<script type="text/javascript">
+  function verif ()
+  {
+      var etat = document.getElementById('check').checked;
+       
+      if(!etat)
+      {
+          document.getElementById('2').className = 'off';
+      }
+      else
+      {  
+          document.getElementById('2').className = 'on';
+      }
+  }
+</script>
+<style type="text/css">
+.on {
+display: block;
+}
+
+.off {
+display: none;
+}
+</style>
+
+
 
 <fieldset>
   <legend>Livraison et paiement</legend><!--partie money/livraison, j'ai pas mis en required jsp si on peut le faire avec des radio-->
