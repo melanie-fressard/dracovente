@@ -2,9 +2,10 @@
 <html>
 <head><title>Commandez ici !</title><meta charset="UTF-8"> 
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="stylesheet" type="text/css" href="../css/commandeETcontact.css">
-<script type= "text/javascript" src="../js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/commandeETcontact.css">
+  <script type= "text/javascript" src="../js/script.js"></script>
 </head>
+
 <body>
 	<header>
 
@@ -47,14 +48,19 @@
 
             </nav>
         </header> <!--header commun-->
-        
+
+ <!--les commandes-->
+
 <article>
   <div class='commande'>
     <form action="machin.php" method="get">
 
 	    <fieldset>
 
-	<legend>Informations personnelles</legend><!--partie info perso (avec nom prenom sexe date adresse email mdp)-->
+  <legend>Informations personnelles</legend>
+  
+<!--partie info perso (avec nom prenom sexe date adresse email mdp)-->
+
 <div><label for="surname">Nom et Prénom :</label>
   <input id="surname" name="uname" type="text" required=""> 	<input id="firstname" name="firstname" type="text" required="">
 </div><br>
@@ -77,7 +83,10 @@
   <input id="vi" name="vi" type="text" placeholder="ex : Saint-Léonard" required="">
 </div><br>
 
-<div><label for="mail">Email :</label><!--inscription en quelque sorte-->
+<div><label for="mail">Email :</label>
+
+<!--inscription en quelque sorte-->
+
   <input id="mail" name="mail" type="email" placeholder="exemple@domain.com" required="">
 </div><br>
 
@@ -90,7 +99,10 @@
 
       <fieldset>
 
-  <legend>Votre Dracaufeu</legend><!--Partie custom du draco-->
+  <legend>Votre Dracaufeu</legend>
+  
+<!--Partie custom du draco-->
+
 <div><label for="dracaufeu-select">Sélectionnez votre Dracaufeu ! :</label>
 </div><br>
 
@@ -116,7 +128,10 @@
 
       <fieldset>
 
-  <legend>Livraison et paiement</legend><!--partie money/livraison, j'ai pas mis en required jsp si on peut le faire avec des radio-->
+  <legend>Livraison et paiement</legend>
+  
+<!--partie money/livraison, j'ai pas mis en required jsp si on peut le faire avec des radio-->
+
 <div><label for="liv">Sélectionnez le type de livraison dont vous souhaitez béneficier :</label><br>
   <input id="st" name="liv" type="radio">Livraison Standart (Gratuite) <img src="https://image.noelshack.com/fichiers-md/2015/07/1423868157-3697-card-communaute.png" alt="pokeball" width="20px"><br>
   <input id="rap" name="liv" type="radio">Livraison Rapide (+4.400 ₽) <img src="https://www.pokemon-france.com/wp-content/uploads/2013/10/Rapide-Ball.png" alt="rapideball" width="22px"><br>
@@ -125,7 +140,6 @@
 
 <div><label for="paiement">Moyen de paiement :</label><br>
   <input id="card" name="paiement" type="radio">Carte bancaire <img src="https://img.icons8.com/ios/452/bank-cards--v1.png" alt="carte" width="20px"><br>
-
   <input id="4fois" name="paiement" type="radio">4 fois sans frais <img src="https://image.flaticon.com/icons/png/512/88/88030.png" alt="div" width="20px"><br>
   <input id="cash" name="paiement" type="radio">Cash <img src="https://archive-media-1.nyafuu.org/vp/image/1486/57/1486574594799.png" alt="cash" width="15px"><br>
 </div><br>
