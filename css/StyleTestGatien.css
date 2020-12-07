@@ -15,7 +15,12 @@ footer{
     width:100%;
     text-align: center;
 }
-footer>a{
+body footer a.grr{
+    font-size: 16px;
+    margin: 0px 30px;
+    color:black;
+}
+footer dev{
     font-size: 16px;
     margin: 0px 30px;
 }
