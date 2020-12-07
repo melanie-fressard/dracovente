@@ -5,3 +5,11 @@ article .commande {
 article .contact {
     text-align: center;
 }
+
+.on {
+    display: block;
+    }
+    
+    .off {
+    display: none;
+    }
