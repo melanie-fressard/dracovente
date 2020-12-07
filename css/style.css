@@ -6,9 +6,8 @@ body{
     background-image: url("../images/fond2.jpg");
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
-    /*background-size: 100%;*//*Le fond prend toujours 100% de l'ecran, qu'importe le zoom*/
-    /*height: 100%;*//*Ne change rien, je ne sais plus pourquoi je l'avais mit*/
-    
+    background-color: black;
+
 }
 
 textarea{
@@ -25,7 +24,7 @@ article{
 
 
 /*PARTIE II : Gestion des tailles des écrans*/
-@media screen and (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
+@media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
     body{
         background-color: black;
     }
@@ -105,12 +104,17 @@ article{
 
 
 
-@media screen and (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
+@media screen and (min-width: 480px) and (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
     body{
-        background-attachment: fixed;
-        background-image: none;/*Supprimer les images sur les écrants vraiment petits*/
-        font-size: 20px;
+        background-size: 100%;
     }
+    
+    
+    article{
+        background-color: rgba(255,255, 240, 0.95);
+
+    }
+
     nav{
         /*width: 100%; Inutile si on utilise un burger
         left: 0%;
@@ -118,9 +122,7 @@ article{
         display: none;
     }
 
-    article{
-        margin: 0px 0px 0px 0px;
-    }
+
 
     header{
         width: 800px;
@@ -164,6 +166,16 @@ article{
     }
  }
 
+
+ @media (max-width: 480px){
+    body{
+        background-image: none;
+    }
+
+    article{
+        margin: 0px 0px 0px 0px;
+    }
+ }
 
  /*************FOOTER**************************/
 
