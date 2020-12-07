@@ -108,7 +108,12 @@
   <input id="reco" name="where" type="checkbox">Une recommandation<br>
   <input id="emp" name="where" type="checkbox">Par l’un de nos employés<br>
   <input id="med" name="where" type="checkbox">Par les médias<br>
-  <input id="check" name="where" onChange="verif();" type="checkbox">Autre : <input id="2" name="where" type="text"></textarea>
+  <input id="check" name="where" onChange="verif();" type="checkbox">Autre : 
+
+<!--si la case n'est pas cochée, la case de texte n'apparait pas-->
+
+  <input id="2" class="off" name="where" type="text"></textarea>
+
 </div><br>
 
 <div><label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
@@ -121,8 +126,11 @@
     <textarea name="message" placeholder="Ecrivez votre message ici !" required=""></textarea>
 </div><br>
 
+<label for="lu">J’ai bien lu les clauses que je n’ai pas lues*</label>
+<input name="lu" type="checkbox" required="" onChange="echange();">
+  <input type="submit" id="1" class="on" value="Envoyer">
+  <input type="submit" id="3" class="off" value="Envoyer" disabled>
 
-  <input type="submit" value="Envoyer">
 </form>
 </div>
 </article>
