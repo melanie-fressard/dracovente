@@ -8,7 +8,7 @@
 
 @media(max-width: 507px)
 {
-    span#slogan
+    blockquote span#slogan
     {
         border: none;
     }
@@ -17,7 +17,7 @@
 @font-face
 {
     font-family: "pokemon";
-    src: url(../font/Pokemon\ Solid.ttf);
+    src: url(../font/PokemonSolid.ttf);
 }
 
 main
