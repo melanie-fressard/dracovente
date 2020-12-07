@@ -130,7 +130,6 @@ article{
 
     div.burger{
         width: 800px;
-        display: inline;
         position: fixed;
         left :85%;
         top : 2%;
@@ -149,7 +148,7 @@ article{
     }*/
 
     div.burger>div#menu2{
-        display: none;
+        visibility: hidden;
         width: 800px;
         position: relative;
         font-size: 50px;
@@ -157,12 +156,12 @@ article{
 
     header>div.burger:hover div#menu2{
         margin-left: 0px;
-        display: inline;
+        visibility: visible;
         /*margin-right: -250px;*/
         /*right: 10%;*/
     }
     header>div.burger:hover div#menu2 a{
-    border-top: none;
+        border-top: none;
     }
  }
 
