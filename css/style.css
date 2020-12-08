@@ -155,7 +155,7 @@ main{
         visibility: hidden;
         width: 800px;
         position: relative;
-        font-size: 50px;
+        font-size: 30px;
     }
 
     header>div.burger:hover div#menu2{
