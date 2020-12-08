@@ -14,7 +14,7 @@ textarea{
     min-height: 100px;
 }
 
-article{
+main{
     margin: 50px 4% 40px 4%;/*A mettre pour les grand écrans uniquement*/
     background-color: rgba(255,255, 240, 0.9);
     font-size: 20px;
@@ -114,7 +114,7 @@ article{
     }
     
     
-    article{
+    main{
         background-color: rgba(255,255, 240, 0.95);
 
     }
@@ -175,7 +175,7 @@ article{
         background-image: none;
     }
 
-    article{
+    main{
         margin: 0px 0px 0px 0px;
     }
  }
