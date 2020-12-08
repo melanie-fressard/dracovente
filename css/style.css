@@ -21,7 +21,7 @@ main{
     padding: 30px 30px 30px 30px;
 }
 
-.ancre{
+#ancre{
     position : fixed;
     top : 87%;
     left: 96%;
