@@ -60,29 +60,55 @@
 
         	<h3> <em> DESCRIPTION DU MÉTIER </em> </h3>
         	
-        	<p> <div> Il passera le plus clair de son temps à divertir l'équipe, qui lui lancera des pièces parce qu'il fait pitié. Des compétences en latin classique sont nécessaires pour pouvoir dresser les Pokémon.
+        	<div><p>  Il passera le plus clair de son temps à divertir l'équipe, qui lui lancera des pièces parce qu'il fait pitié. Des compétences en latin classique sont nécessaires pour pouvoir dresser les Pokémon.
 
-        	</div></p>
+        	</p></div>
 
         	<h3> <em> TEST D'APPTITUDE </em> </h3>
         	<p>
-        		
         		Pour cela, il faudra s'entrainer au test suivant, réussir à invoquer un Tortank avec le texte ci-joint :
-
-        		<blockquote> <em> <div class="blockquote">
-        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula nunc eget lacus hendrerit, ut laoreet felis vehicula. Phasellus blandit in sem in lacinia. Duis vestibulum justo massa, non tempor dui auctor et. In feugiat mi nisi, non sodales lacus aliquet vitae. Vivamus vehicula est non magna vulputate, non elementum arcu lacinia. Aliquam eget vulputate felis. Aenean id bibendum enim. Aliquam porttitor nisi vel vulputate finibus.</div><br><br>
+            </p>
+                <div class="blockquote">
+                <p> 
+        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula nunc eget lacus hendrerit, ut laoreet felis vehicula. Phasellus blandit in sem in lacinia. Duis vestibulum justo massa, non tempor dui auctor et. In feugiat mi nisi, non sodales lacus aliquet vitae. Vivamus vehicula est non magna vulputate, non elementum arcu lacinia. Aliquam eget vulputate felis. Aenean id bibendum enim. Aliquam porttitor nisi vel vulputate finibus.
+                </p></div>
 
         		
-				<div class="blockquote"> Aliquam vitae odio et nisl vestibulum tincidunt. Vivamus sed orci ut turpis dapibus porta id id augue. Cras convallis ex vel tellus vestibulum viverra. Integer vehicula pulvinar iaculis. Vivamus consequat accumsan luctus. Aenean non aliquet nunc. Praesent sed libero id tellus mollis sollicitudin. Suspendisse potenti. Sed vel elit metus.
-        		</div><br><br>
+				<div class="blockquote"><p> Aliquam vitae odio et nisl vestibulum tincidunt. Vivamus sed orci ut turpis dapibus porta id id augue. Cras convallis ex vel tellus vestibulum viverra. Integer vehicula pulvinar iaculis. Vivamus consequat accumsan luctus. Aenean non aliquet nunc. Praesent sed libero id tellus mollis sollicitudin. Suspendisse potenti. Sed vel elit metus.
+        		</p></div>
 
-        		<div class="blockquote"> Vivamus laoreet ante sed risus sodales, ac finibus nibh efficitur. Aliquam id bibendum ligula, vitae luctus lacus. Aliquam efficitur orci vitae magna vehicula, sit amet pulvinar mauris auctor. Proin id justo sed ligula condimentum auctor. Ut auctor felis nec hendrerit pulvinar. Nulla sit amet nisl eget diam gravida luctus. Curabitur congue, augue eu eleifend imperdiet, leo nisl ultricies magna, eget efficitur risus nisi et neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pulvinar, velit quis posuere volutpat, risus mi fermentum leo, sit amet luctus velit dui id eros. Sed at lorem consequat, euismod orci sed, porttitor leo. </div><br><br>
+        		<div class="blockquote"><p> Vivamus laoreet ante sed risus sodales, ac finibus nibh efficitur. Aliquam id bibendum ligula, vitae luctus lacus. Aliquam efficitur orci vitae magna vehicula, sit amet pulvinar mauris auctor. Proin id justo sed ligula condimentum auctor. Ut auctor felis nec hendrerit pulvinar. Nulla sit amet nisl eget diam gravida luctus. Curabitur congue, augue eu eleifend imperdiet, leo nisl ultricies magna, eget efficitur risus nisi et neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pulvinar, velit quis posuere volutpat, risus mi fermentum leo, sit amet luctus velit dui id eros. Sed at lorem consequat, euismod orci sed, porttitor leo. </p></div>
 
-        		<div class="blockquote"> Nullam a mollis quam. Sed fringilla pellentesque est, eget placerat metus dictum vitae. Sed sit amet arcu velit. Pellentesque eget turpis vitae elit euismod mollis. Integer sollicitudin, urna vitae accumsan facilisis, eros orci lobortis ipsum, quis imperdiet lectus dui nec augue. Vivamus elit felis, interdum eu ex sit amet, consectetur aliquet libero. Praesent neque enim, rhoncus et vestibulum sit amet, elementum eu diam.</div><br><br>
+<!--Envoyer une candidature-->
+            <div class='candidature'><form action="metierI.php" method="get">
+            
+            <fieldset>
+                <legend>Si  le poste vous intéresse</legend>
 
-        		<div class="blockquote"> Vestibulum auctor, ex sed mollis pharetra, urna justo ultricies mi, eget aliquam sapien sapien non ipsum. Suspendisse eu tincidunt ante, vitae iaculis mi. Morbi vel risus feugiat, gravida sem in, venenatis velit. Ut sit amet est nulla. Cras eget finibus diam. Duis pretium ante eros, et consectetur sapien venenatis nec. In maximus mauris ut orci tempor, a tincidunt ante tincidunt. Fusce libero diam, accumsan vel tincidunt sit amet, sollicitudin a lorem. Quisque eget justo vitae nisl mattis ornare.</div><br><br>
-				</em></blockquote>
-        	</p>	
+<!--Nom, prénom et email obligatoire-->                     
+                    <div>
+                        <label for="surname">Nom suivi du prénom* :</label>
+                        <input id="surname" name="uname" type="text" required>
+                        <input id="firstname" name="firstname" type="text" required>
+                    </div>
+
+                    <div>
+                        <label for="mail">Email* :</label>
+                        <input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required>
+                    </div>
+<!--Traduction du test-->
+                    <div>
+                        <label for="traduction">Réponse au test d'apptitude de traduction* :</label>
+                        <textarea name="traduction" placeholder="Saisissez ici votre compte rendu de traduction..."
+                        rows="15" cols="50" required></textarea>
+                    </div>
+<!--Explication de la signification de l'astérisque-->
+                    <div class="rechts">*Champs obligatoires</div>
+            </fieldset>
+            <!--bouton envoyer-->
+                <input type="submit" value="Envoyer">
+            </form>
+            </div>
         </main>
         
         <a href="#" id="ancre"><img src="../images/ancre.png" alt="ancre" width="50px"></a>

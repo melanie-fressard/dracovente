@@ -1,13 +1,13 @@
 /*Tout ce qui est propre à Nous Rejoindre et les trois métiers*/
 main h1{
-	background-color: #3D7DCA; /*Change la couleur de font*/
+	background-color: #3D7DCA; /*Change la couleur d'arrière-plan du texte*/
 	color: #FFCB05; /*Change la couleur du texte*/
     text-align: center; /*Mets le texte au centre*/
 }
 
 h2{
     background-color: #FFAD00;
-    text-indent: 10px;
+    text-indent: 10px; /*Petit alinéa de 10px*/
 }
 
 h3{
@@ -21,9 +21,23 @@ p {
 
 div {
     text-indent: 20px;
-    margin-left: 10px;
 }
 
-.blockquote {
-    text-indent: 30px;
+/*Mise en page du texte en latin pour le distinguer visuellement du reste*/
+.blockquote p{
+    text-indent: 35px;
+    margin-left: 30px;
+    font-style: italic;
+}
+
+/*Espacement des différents labels/inputs*/
+fieldset div {
+    margin-bottom: 20px;
+}
+
+/*classe rechts s'aligne avec la bordure de droite et
+n'a pas besoin de laisser de marge en-dessous car c'est la fin du fieldset*/
+.rechts {
+    text-align: right;
+    margin-bottom: 0px;
 }
