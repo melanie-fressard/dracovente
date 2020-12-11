@@ -1,4 +1,4 @@
-@media(max-width: 1000px)
+@media(max-width: 1163px)
 {
     div#raptincel_block
     {
@@ -25,9 +25,17 @@ main
     width: 80%;
     background-color: rgba(255,255, 240, 0.9);
     margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
     text-align: center;
-    margin-top: 20px;
     border: solid black 1px;
+
+}
+
+blockquote
+{
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 
@@ -84,15 +92,23 @@ span#slogan
     background-color: #3A3F43;
     width: 100%;
     display: inline-block;
-    border: black solid 1px;
+    border: black solid 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
 
 }
 
+.contenue_egg
+{
+    margin: 50px 0;
+}
 
 #egg_img
 {
     float: left;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 #egg_txt
@@ -107,15 +123,16 @@ span#slogan
     background-color: #3A3F43;
     width: 50%;
     height: 270px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     text-align: center;
-    border: black solid 1px;
+    border: black solid 2px;
 }
 
 #raptincel_img
 {
     float:left;
-    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
     background-color:  #727272;
 }
 
@@ -129,7 +146,6 @@ div#raptincel_block > p
 #order_link
 {
     text-decoration: none;
-    
 }
 
 #order_txt
@@ -164,12 +180,15 @@ div#usedraco
 {
     width: 50%;
     height: 50%;
+    border: black solid 1px;
 }
 
 #img_livreur
 {
     width: 50%;
     height: 50%;
+    border: black solid 1px;
+    margin-bottom: 40px;
 }
 
 p.txt_monture
@@ -177,4 +196,12 @@ p.txt_monture
     color: white;
     margin-left: 20px ;
     margin-right: 20px ;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+div#CommandButton
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
