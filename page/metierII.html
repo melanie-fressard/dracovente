@@ -57,18 +57,44 @@
 			On est super sympas :D
 			</p>
 		<h3> <em> DESCRIPTION DU MÉTIER </em> </h3>
-			<p><div>
+			<div><p>
 
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula nunc eget lacus hendrerit, ut laoreet felis vehicula. Phasellus blandit in sem in lacinia. Duis vestibulum justo massa, non tempor dui auctor et. In feugiat mi nisi, non sodales lacus aliquet vitae. Vivamus vehicula est non magna vulputate, non elementum arcu lacinia. Aliquam eget vulputate felis. Aenean id bibendum enim. Aliquam porttitor nisi vel vulputate finibus.
 
 
 				Aliquam vitae odio et nisl vestibulum tincidunt. Vivamus sed orci ut turpis dapibus porta id id augue. Cras convallis ex vel tellus vestibulum viverra. Integer vehicula pulvinar iaculis. Vivamus consequat accumsan luctus. Aenean non aliquet nunc. Praesent sed libero id tellus mollis sollicitudin. Suspendisse potenti. Sed vel elit metus.
 
-			</div></p>
+			</p></div>
 
         <h3> <em> QUALIFICATIONS REQUISES </em> </h3>
             <p>
                 Vous devez vous appeller Joëlle ! >:(
+            </p>
+
+<!--Envoyer une candidature-->
+            <div class='candidature'><form action="metierII.php" method="get">
+            
+            <fieldset>
+                <legend>Si  le poste vous intéresse</legend>
+<!--Nom, prénom (qui est forcément Joëlle) et email obligatoire-->                     
+                    <div>
+                        <label for="surname">Nom suivi du prénom* :</label>
+                        <input id="surname" name="uname" type="text" required>
+                        <input id="firstname" name="firstname" type="text" placeholder="Joëlle" pattern="Joëlle" required>
+                    </div>
+
+                    <div>
+                        <label for="mail">Email* :</label>
+                        <input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required>
+                    </div>
+
+<!--Explication de la signification de l'astérisque-->
+                    <div class="rechts">*Champs obligatoires</div>
+            </fieldset>
+            <!--bouton envoyer-->
+                <input type="submit" value="Envoyer">
+            </form>
+            </div>
 	</main>
     
     <a href="#" id="ancre"><img src="../images/ancre.png" alt="ancre" width="50px"></a>
