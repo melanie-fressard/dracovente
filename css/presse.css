@@ -1,0 +1,30 @@
+article{
+    background-color: rgb(161, 161, 187);
+    margin: 15px 15px 0px 15px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 8;
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+aside{
+    background-color: rgb(191, 123, 255);
+    margin: 15px 15px 0px 15px;
+    padding: 5px 5px;
+    display: flex;
+    flex-grow: 1;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background: none;
+    padding: 0px 0px;
+}
