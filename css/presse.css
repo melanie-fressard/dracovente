@@ -4,13 +4,15 @@ article{
     padding: 5px 5px;
     display: flex;
     flex-direction: column;
-    flex-grow: 8;
+    flex-grow: 8;/*Je cherche à rendre le article plus grand que le asside mais ça ne marche pas*/
     
 }
 
 section{
+    /*Le flex n'est pas utile
     display: flex;
     flex-direction: column;
+    */
 }
 
 
