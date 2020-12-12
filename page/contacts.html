@@ -16,7 +16,7 @@
                       <div><a href="./contactp.html">Contacts</a></div>
                       <div><a href="./equipe.html">Équipe</a></div>
                       <div><a href="./Produit.html">Produit</a></div>
-                      <div><a href="./Presse.html">Presse</a></div>
+                      <div><a href="./presse.html">Presse</a></div>
                       <div><a href="./nousRejoindre.html">Nous Rejoindre</a></div>
                    </div>
                   </div>
@@ -34,7 +34,7 @@
                         <a href="./Produit.html">Produit</a>
                     </div>
                     <div>
-                        <a href="./Presse.html">Presse</a>
+                        <a href="./presse.html">Presse</a>
                     </div>
                     <div class="conteneur">
                         <a href="./nousRejoindre.html">Nous Rejoindre</a>
@@ -62,21 +62,21 @@
 
 <div><label for="surname">Nom* :</label>
     <input id="surname" name="uname" type="text" required="">
-</div><br>
+</div>
 
 <div><label for="firstname">Prénom :</label>
     <input id="firstname" name="firstname" type="text">
-</div><br>
+</div>
 
 <div><label for="mail">Email* :</label>
     <input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required="">
-</div><br>
+</div>
 
 <div><label for="code">Code Postal :</label>
     <input id="code" name="postal" type="text" placeholder="ex 87400" pattern="^(?:[0-8]\d|9[0-8])\d{3}$">
-</div><br>
+</div>
 
-<div><label for="country-select">Lieu de résidence :</label></div><br>
+<div><label for="country-select">Lieu de résidence :</label></div>
 
 <div><select name="country" id="country-select">
     <option value="">--Choisissez une option--</option>
@@ -95,41 +95,41 @@
     <option value="su">Russie</option>
     <option value="tv">Tuvalu</option>
     <option value="us">USA</option>
-    </select></div><br>
+    </select></div>
 
-            </fieldset><br>
+            </fieldset>
     
 <!--partie question-->
 
-<div><label for="where-select">Comment avez-vous entendu parler de notre société ?</label><br><br>
+<div><label for="where-select">Comment avez-vous entendu parler de notre société ?</label>
 
-  <input id="web" name="where" type="checkbox">Notre site Web<br>
-  <input id="resc" name="where" type="checkbox">Un moteur de recherche<br>
-  <input id="reco" name="where" type="checkbox">Une recommandation<br>
-  <input id="emp" name="where" type="checkbox">Par l’un de nos employés<br>
-  <input id="med" name="where" type="checkbox">Par les médias<br>
+  <input id="web" name="where" type="checkbox">Notre site Web
+  <input id="resc" name="where" type="checkbox">Un moteur de recherche
+  <input id="reco" name="where" type="checkbox">Une recommandation
+  <input id="emp" name="where" type="checkbox">Par l’un de nos employés
+  <input id="med" name="where" type="checkbox">Par les médias
   <input id="check" name="where" onChange="verif();" type="checkbox">Autre : 
 
 <!--si la case n'est pas cochée, la case de texte n'apparait pas-->
 
   <input id="2" class="off" name="where" type="text"></textarea>
 
-</div><br>
+</div>
 
 <div><label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
     <input id="date" name="date" type="date" required="">
-</div><br>
+</div>
 
 <!--le message-->
 
-<div><label for="message">Votre message* :</label><br>
+<div><label for="message">Votre message* :</label>
     <textarea name="message" placeholder="Ecrivez votre message ici !" required=""></textarea>
-</div><br>
+</div>
 
 <label for="lu">J’ai bien lu les <a href="">mentions légales</a> que je n’ai pas lues*</label>
 <input name="lu" type="checkbox" required="" onChange="echange();">
-  <input type="submit" id="1" class="on" value="Envoyer">
-  <input type="submit" id="3" class="off" value="Envoyer" disabled>
+  <input type="submit" id="3" class="on" value="Envoyer">
+  <input type="submit" id="1" class="off" value="Envoyer" disabled>
 
 </form>
 </div>
