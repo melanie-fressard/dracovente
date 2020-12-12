@@ -17,21 +17,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    echange();
+    nonapparition();
   });
 
-  function echange ()
+  function nonapparition ()
   {
-      var etat = document.getElementById('check').checked;
+    var etat2 = document.getElementById('check').checked;
        
-      if(!etat)
+      if(!etat2)
       {
-        document.getElementById('1').className = 'on';
-          document.getElementById('3').className = 'off';
-      }
-      else
-      {  
         document.getElementById('1').className = 'off';
           document.getElementById('3').className = 'on';
+      }
+      else if(etat2 && document.getElementById('1').className == 'off')  { 
+        document.getElementById('1').className = 'on';
+          document.getElementById('3').className = 'off';
       }
   }
