@@ -9,8 +9,10 @@ main .contact {
 .on {
     visibility: visible;
 }
-    
-    .off {
-    display: none;
-    }
+.off {
+    visibility: hidden;
+}
 
+#3{
+    visibility: hidden;
+}
