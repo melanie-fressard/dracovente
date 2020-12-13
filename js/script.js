@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     verif();
   });
 
-  function verif ()
+  function verif () //affiche un element si la case est cochée
   {
       var etat = document.getElementById('check').checked;
        
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     echange();
   });
 
-  function echange ()
+  function echange () //affiche un element si la case est cochée et en fait disparaitre un autre
   {
     var etat = document.getElementById('lu').checked;
        

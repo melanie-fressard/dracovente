@@ -70,11 +70,11 @@
 
 <div><label for="mail">Email* :</label>
     <input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required="">
-</div>
+</div> <!--doit respecter la forme pour accepter l'input-->
 
 <div><label for="code">Code Postal :</label>
     <input id="code" name="postal" type="text" placeholder="ex 87400" pattern="^(?:[0-8]\d|9[0-8])\d{3}$">
-</div>
+</div><!--pattern accepte que les codes postaux francais-->
 
 <div><label for="country-select">Lieu de résidence :</label></div>
 
@@ -128,13 +128,14 @@
 
 <label for="lu">J’ai bien lu les <a href="">mentions légales</a> que je n’ai pas lues*</label>
 <input id="lu" name="lu"  onChange="echange(); " type="checkbox" required="">
+
+<!--par defaut le envoyer disabled est affiché, lorsque la case est cochée, le bouton envoyer est accessible-->
   <input id="1" class="off" value="Envoyer" type="submit">
   <input id="3" class="on" value="Envoyer" type="submit" disabled>
 
 </form>
 </div>
 </main>
-
 <a href="#" id="ancre"><img src="../images/ancre.png" alt="ancre" width="50px"></a>
 
 <footer>     
