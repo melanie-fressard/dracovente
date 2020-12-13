@@ -1,5 +1,5 @@
 /*Tout ce qui est propre à Nous Rejoindre et les trois métiers*/
-main h1{
+h1{
 	background-color: #3D7DCA; /*Change la couleur d'arrière-plan du texte*/
 	color: #FFCB05; /*Change la couleur du texte*/
     text-align: center; /*Mets le texte au centre*/
@@ -35,9 +35,9 @@ fieldset div {
     margin-bottom: 20px;
 }
 
-/*classe rechts s'aligne avec la bordure de droite et
+/*classe co s'aligne avec la bordure de droite et
 n'a pas besoin de laisser de marge en-dessous car c'est la fin du fieldset*/
-.rechts {
+.co {
     text-align: right;
     margin-bottom: 0px;
 }
