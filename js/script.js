@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   document.addEventListener('DOMContentLoaded', function() {
-    nonapparition();
+    echange();
   });
 
-  function nonapparition ()
+  function echange ()
   {
     var etat2 = document.getElementById('check').checked;
        
