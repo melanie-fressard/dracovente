@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if(!etat2)
       {
         document.getElementById('1').className = 'off';
-          document.getElementById('3').className = 'on';
+          //document.getElementById('3').className = 'on';
       }
-      else if(etat2 && document.getElementById('1').className == 'off')  { 
+      else  { 
         document.getElementById('1').className = 'on';
-          document.getElementById('3').className = 'off';
+          //document.getElementById('3').className = 'off';
       }
   }
