@@ -108,7 +108,7 @@
   <input id="reco" name="where" type="checkbox">Une recommandation
   <input id="emp" name="where" type="checkbox">Par l’un de nos employés
   <input id="med" name="where" type="checkbox">Par les médias
-  <input id="check" name="where" onChange="verif();" type="checkbox">Autre : 
+  <input id="check" name="where" onChange="verif();" type="checkbox">Autre  
 
 <!--si la case n'est pas cochée, la case de texte n'apparait pas-->
 
@@ -127,9 +127,9 @@
 </div>
 
 <label for="lu">J’ai bien lu les <a href="">mentions légales</a> que je n’ai pas lues*</label>
-<input name="lu" type="checkbox" required="" onChange="echange();">
-  <input type="submit" id="1" class="off" value="Envoyer">
-  <input type="submit" id="3" class="on" value="Envoyer" disabled>
+<input id="lu" name="lu"  onChange="echange(); " type="checkbox" required="">
+  <input id="1" class="off" value="Envoyer" type="submit">
+  <input id="3" class="on" value="Envoyer" type="submit" disabled>
 
 </form>
 </div>

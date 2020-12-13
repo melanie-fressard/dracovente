@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function echange ()
   {
-    var etat2 = document.getElementById('check').checked;
+    var etat = document.getElementById('lu').checked;
        
-      if(!etat2)
+      if(!etat)
       {
         document.getElementById('1').className = 'off';
-          //document.getElementById('3').className = 'on';
+          document.getElementById('3').className = 'on';
       }
       else  { 
         document.getElementById('1').className = 'on';
-          //document.getElementById('3').className = 'off';
+          document.getElementById('3').className = 'off';
       }
   }
