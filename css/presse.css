@@ -34,5 +34,10 @@ main{
 }
 
 section{
+    margin-bottom: 25px;
     border: 1px solid black;
+}
+
+img.logo{
+    width: 40px;
 }
