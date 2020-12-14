@@ -1,47 +1,47 @@
-:root{
+
+/*Ce fichier css s'applique à toutes les pages, il contient notament le style du header et du footer*/
+
+
+:root{/*Cette partie sert à définir des variables qui pourrons être utilisé dans tout les css*/
     --header-color-bg: #FAAA6D;/*La couleur de fond du header et peu-être du footer*/
     --header-link-hover:#419EAE;/*Couleur des liens quand la sourie passe dessus*/
-    --main-color-bg:rgba(255,255, 240, 0.9);
+    --main-color-bg:rgba(255,255, 240, 0.9);/*Couleur de background du main*/
 }
 body{
-    background-image: url("../images/fond2.jpg");
+    background-image: url("../images/fond2.jpg");/*Met le dragon en fond*/
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
-    background-color: black;
+    background-color: black;/*Quand l'image ne peux pas prendre toute la page, met un fond noir à la place*/
 }
 
-textarea{
+textarea{/*Fait en sorte que les zones de textes s'affiche toujours avec une taille minimum*/
     width: 80%;
     min-height: 100px;
 }
 
-main{
-    margin: 50px 4% 40px 4%;/*A mettre pour les grand écrans uniquement*/
-    background-color: var(--main-color-bg);
+main{/*Le main contient toutes les informations spécifiques à chaques pages*/
+    margin: 50px 4% 40px 4%;
+    background-color: var(--main-color-bg);/*On va chercher le contenu de la variable*/
     font-size: 20px;
     padding: 30px 30px 30px 30px;
 }
 
-#ancre{
+#ancre{/*Place notre ancre qui permet de remonter en haut des page*/
     position : fixed;
     top : 87%;
     left: 90%;
 }
 
-#ballon {
+a#ancre>img {/*Configure la taille de l'ancre*/
     width : 50px;
     height: auto;
 }
 
 @media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
-    body{
-        background-color: black;
-    }
 
-    /*PARTIE I : Le Header commun à toutes les pages*/
-    header{
-        display: flex;/*Alignement de son contenu*/
-        flex-direction: row;
+    header{/*Organisation du header sans burger*/
+        display: flex;
+        flex-direction: row;/*Alignement de son contenu*/
 
     }
 
@@ -172,7 +172,7 @@ main{
     header>div.burger:hover nav#menu2 a{
         border-top: none;
     }
-    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souris passe*/
+    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souri */
         font-weight: bolder;
         color: var(--header-link-hover);
     }
