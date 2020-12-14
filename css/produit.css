@@ -1,4 +1,4 @@
-@media(max-width: 1163px)
+@media(max-width: 1163px) /* Enlève le bloc raptincel pour éviter de surchager la page */
 {
     div#raptincel_block
     {
@@ -6,7 +6,7 @@
     }
 }
 
-@media(max-width: 507px)
+@media(max-width: 507px) /* Le contour du slogan s'enlève quand la taille de l'écran est en dessous de 507 pixels */
 {
     blockquote span#slogan
     {
@@ -14,13 +14,13 @@
     }
 }
 
-@font-face
+@font-face /* Ajout d'une police d'écriture qu'on nommera pokemon */
 {
     font-family: "pokemon";
     src: url(../font/PokemonSolid.ttf);
 }
 
-main
+main /* Bloc main qui rassemble tout le contenu de la page */
 {
     width: 80%;
     background-color: rgba(255,255, 240, 0.9);
@@ -32,14 +32,14 @@ main
 
 }
 
-blockquote
+blockquote /**/
 {
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
 
-span#slogan
+span#slogan                     /* Le slogan de notre entreprise : Pokémon, achetez-les tous ! + rajout de la police d'écriture sur le slogan*/
 {
     border: #3A3F43 double thick;
     padding: 10px;
@@ -47,17 +47,17 @@ span#slogan
     color: #53585a;
 }
 
-#entreprise_block
+#entreprise_block               /* Donne un fond gris/noir au bloc */
 {
     background-color: #3A3F43;
 }
 
-#contenue_entreprise
+#contenue_entreprise            /* Met le contenu en ligne */
 {
     display: inline;
 }
 
-div#entreprise_block div#contenue_entreprise p
+div#entreprise_block div#contenue_entreprise p /* Placement du texte + couleur du texte en blanc */
 {
     color: white;
     padding-bottom: 50px;
@@ -66,14 +66,14 @@ div#entreprise_block div#contenue_entreprise p
     margin-left: 30px;
 }
 
-div#entreprise_block div#contenue_entreprise p a
+div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a dans le bloc de l'entreprise */
 {
     text-decoration: none;
     color: darkorange;
     font-size: 25px;
 }
 
-#logo
+#logo /* Modifie le logo présent dans le logo entreprise */
 {
     width: 10%;
     height: 10%;
@@ -83,12 +83,12 @@ div#entreprise_block div#contenue_entreprise p a
     border-radius: 100px;
 }
 
-#img_block
+#img_block /* Met les image de Dracaufeu en ligne */
 {
     display: inline;
 }
 
-.img_dracaufeu
+.img_dracaufeu /* Modifie les images de Dracaufeu + ajout de bordure arrondi */
 {
     width: 20%;
     height: 20%;
@@ -97,33 +97,33 @@ div#entreprise_block div#contenue_entreprise p a
     padding: 10px;
 }
 
-#draco_x
+#draco_x /* Modifie la première image */
 {
     margin-top: 20px;
 }
 
-#draco_o
+#draco_o /* Modifie la seconde image */
 {
     padding-top: 25.39px;
 }
 
-#draco_y
+#draco_y /* Modifie la troisème image */
 {
     padding-top: 19.91px;
 }
 
-#draco_g
+#draco_g /* Modifie la dernière image */
 {
     width: 18%;
     height: 18%;
 }
 
-.img_dracaufeu:hover
+.img_dracaufeu:hover /* Augmente la bordure de l'image quand la souris de l'utilisateur passe dessus */
 {
     border: #3A3F43 solid 3px;
 }
 
-#egg_block
+#egg_block /* Modifie le bloc qui contient l'oeuf et son texte */
 {
     background-color: #3A3F43;
     width: 100%;
@@ -136,18 +136,18 @@ div#entreprise_block div#contenue_entreprise p a
 
 }
 
-.contenue_egg
+.contenue_egg /* Modifie le placement de l'image oeuf avec son texte */
 {
     margin: 50px 0;
 }
 
-#egg_img
+#egg_img /* Met l'image oeuf à gauche en float et met obligatoirement 40px d'écart à gauche */
 {
     float: left;
     margin-left: 40px;
 }
 
-#egg_txt
+#egg_txt /* Modifie l'emplacement, la couleur ainsi que l'alignement du texte du bloc oeuf */
 {
     margin: 30px;
     color: white;
