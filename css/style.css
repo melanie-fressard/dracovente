@@ -69,14 +69,14 @@ a#ancre>img {/*Configure la taille de l'ancre*/
         transition:800ms;/*Permet d'éviter que l'animation soit instantanée*/
     }
 
-    nav div a{
-        font-size: 25px;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
+    nav div a{/*Taille des liens dans le header*/
+        font-size: 25px;
     }
 
     a:-webkit-any-link {
         color: rgb(151, 14, 10);
         cursor: pointer;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     .submenu{
