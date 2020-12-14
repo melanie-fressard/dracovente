@@ -1,52 +1,51 @@
-:root{
+
+/*Ce fichier css s'applique à toutes les pages, il contient notament le style du header et du footer*/
+
+
+:root{/*Cette partie sert à définir des variables qui pourrons être utilisé dans tout les css*/
     --header-color-bg: #FAAA6D;/*La couleur de fond du header et peu-être du footer*/
     --header-link-hover:#419EAE;/*Couleur des liens quand la sourie passe dessus*/
-    --main-color-bg:rgba(255,255, 240, 0.9);
+    --main-color-bg:rgba(255,255, 240, 0.9);/*Couleur de background du main*/
 }
 body{
-    background-image: url("../images/fond2.jpg");
+    background-image: url("../images/fond2.jpg");/*Met le dragon en fond*/
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
-    background-color: black;
+    background-color: black;/*Quand l'image ne peux pas prendre toute la page, met un fond noir à la place*/
 }
 
-textarea{
+textarea{/*Fait en sorte que les zones de textes s'affiche toujours avec une taille minimum*/
     width: 80%;
     min-height: 100px;
 }
 
-main{
-    margin: 50px 4% 40px 4%;/*A mettre pour les grand écrans uniquement*/
-    background-color: var(--main-color-bg);
+main{/*Le main contient toutes les informations spécifiques à chaques pages*/
+    margin: 50px 4% 40px 4%;
+    background-color: var(--main-color-bg);/*On va chercher le contenu de la variable*/
     font-size: 20px;
     padding: 30px 30px 30px 30px;
 }
 
-#ancre{
+#ancre{/*Place notre ancre qui permet de remonter en haut des page*/
     position : fixed;
     top : 87%;
     left: 90%;
 }
 
-#ballon {
+a#ancre>img {/*Configure la taille de l'ancre*/
     width : 50px;
     height: auto;
 }
 
 @media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
-    body{
-        background-color: black;
-    }
 
-    /*PARTIE I : Le Header commun à toutes les pages*/
-    header{
-        display: flex;/*Alignement de son contenu*/
-        flex-direction: row;
-
+    header{/*Organisation du header sans burger*/
+        display: flex;
+        flex-direction: row;/*Alignement de son contenu*/
     }
 
 
-    nav{
+    header nav{/*Positionne le header sans burger*/
         position: fixed;/*On bloque le menu en haut de l'écran*/
         width: 80%;/*Largeur à remettre à 100% sur les petits écrans*/
         left: 10%;
@@ -57,8 +56,8 @@ main{
         align-items: stretch;
     }
 
-    nav > div{
-        background-color: var(--header-color-bg);/*On stoque la valeur de la couleur dans une variable pour pouvoir la réutiliser*/
+    nav > div{/*D'occupe de l'apparence du header sans burger*/
+        background-color: var(--header-color-bg);
         text-align: center;
         border-radius: 15px;
         flex-grow: 1;
@@ -67,20 +66,20 @@ main{
 
     nav > div:hover{/*Augmente la taille de l'élement sur lequel la souris passe*/
         flex-grow: 2;
-        transition:800ms ;
+        transition:800ms;/*Permet d'éviter que l'animation soit instantanée*/
     }
 
-    a{
-        font-size: 150%;/*diminu la taille du texte sur les petits écrans pour éviter qu'il dépasse des bords*/
+    nav div a{/*Taille des liens dans le header*/
+        font-size: 25px;
     }
 
-    a:-webkit-any-link {
+    a:-webkit-any-link {/*Affecte tous les liens du site*/
         color: rgb(151, 14, 10);
         cursor: pointer;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
-    .submenu{
+    .submenu{/*Donne les caractéristiques des elements du menu déroulant des métiers*/
         display: none;
         margin: 0px 0px 0px 0px;
         background-color: var(--header-color-bg);
@@ -90,9 +89,8 @@ main{
         border-top-right-radius: 0px;
     }
 
-    nav>div:hover .submenu{
+    nav>div:hover .submenu{/*Quand la souris passe dessus on ouvre les submenus*/
         display: block;
-        font-weight: normal;/*Empèche les submenus de se mettre en gras quand la souris passe dessus*/
     }
 
     nav div a:hover{/*Met en gras et en couleur la fiche métier sur laquelle passe la souris*/
@@ -100,12 +98,12 @@ main{
         color: var(--header-link-hover);
     }
 
-    nav>div.conteneur:hover {
+    nav>div.conteneur:hover {/*Rétabli les angles de "nous rejoindre" afin de ne pas avoir d'espace avec ses sous-menus*/
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    .burger{
+    .burger{/*Cache le burger*/
         display: none;
     }
 }
@@ -161,7 +159,7 @@ main{
         /*visibility: hidden; Pas de visibility sinon la souris passant dessus le révele sans avoir touché le burger*/
         width: 800px;
         position: relative;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     header>div.burger:hover nav#menu2{
@@ -172,7 +170,7 @@ main{
     header>div.burger:hover nav#menu2 a{
         border-top: none;
     }
-    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souris passe*/
+    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souri */
         font-weight: bolder;
         color: var(--header-link-hover);
     }
