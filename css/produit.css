@@ -154,7 +154,7 @@ div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a da
     text-align: center;
 }
 
-#raptincel_block
+#raptincel_block /* Modifie le bloc raptincel en donnat une couleur de fond, un placement + bordure */
 {
     background-color: #3A3F43;
     width: 50%;
@@ -164,7 +164,7 @@ div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a da
     border: black solid 2px;
 }
 
-#raptincel_img
+#raptincel_img /* Modifie l'image du reptincel */
 {
     float:left;
     margin-top: 15px;
@@ -172,56 +172,33 @@ div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a da
     background-color:  #727272;
 }
 
-div#raptincel_block > p 
+div#raptincel_block > p /* Modifie le texte present dans le bloc raptincel */
 {
     color: white;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-
+    padding: 10px 15px 10px 15px ;
 }
 
-#order_link
-{
-    text-decoration: none;
-}
-
-#order_txt
-{
-    background-color: #FCC499;
-    border: #b3794e solid 2px;
-    padding: 10px;
-    color: black;
-    border-radius: 25px;
-}
-
-#order_txt:hover
-{
-    color: #215c8d;
-    transition: 0.2s;
-}
-
-p > .musiclink
+p > .musiclink /* Donne une couleur, un taille et enlève le surlignement aux lien qui renvoie à deux musiques */
 {
     color: darkorange;
     text-decoration: none;
     font-size: 18px;
 }
 
-div#usedraco
+div#usedraco /* Met une couleur de fond + une bordure */
 {
     background: #3A3F43;
     border: black solid 1px;
 }
 
-#img_monture
+#img_monture /* Image du Dracaufeu avec un selle  */
 {
     width: 50%;
     height: 50%;
     border: black solid 1px;
 }
 
-#img_livreur
+#img_livreur /* Image du Dracaufeu livreur */
 {
     width: 50%;
     height: 50%;
@@ -229,7 +206,7 @@ div#usedraco
     margin-bottom: 40px;
 }
 
-p.txt_monture
+p.txt_usedraco /* Texte au dessus des deux images */
 {
     color: white;
     margin-left: 20px ;
@@ -238,8 +215,28 @@ p.txt_monture
     margin-bottom: 40px;
 }
 
-div#CommandButton
+div#CommandButton /* Emplacement du bouton "commander" */
 {
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+#order_link /* Enlève le surlignement du lien  */
+{
+    text-decoration: none;
+}
+
+#order_txt /* Donne un fond, une bordure (arrondie sur les coins) au bouton "commander" */
+{
+    background-color: #FCC499;
+    border: #b3794e solid 2px;
+    padding: 10px;
+    color: black;
+    border-radius: 25px;
+}
+
+#order_txt:hover /* Change la couleur du texte du bouton "commander" quand la souris de l'utilisateur passe dessus. */
+{
+    color: #215c8d;
+    transition: 0.2s;
 }
