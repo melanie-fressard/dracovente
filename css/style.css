@@ -98,7 +98,6 @@ main{
     nav div a:hover{/*Met en gras et en couleur la fiche métier sur laquelle passe la souris*/
         font-weight: bolder;
         color: var(--header-link-hover);
-        
     }
 
     nav>div.conteneur:hover {
@@ -125,9 +124,6 @@ main{
     }
 
     nav{
-        /*width: 100%; Inutile si on utilise un burger
-        left: 0%;
-        right: 0%;*/
         display: none;
     }
 
@@ -160,7 +156,7 @@ main{
         width: 100px;
     }*/
 
-    div.burger>div#menu2{
+    div.burger>nav#menu2{
         display: none;
         /*visibility: hidden; Pas de visibility sinon la souris passant dessus le révele sans avoir touché le burger*/
         width: 800px;
@@ -168,13 +164,17 @@ main{
         font-size: 30px;
     }
 
-    header>div.burger:hover div#menu2{
+    header>div.burger:hover nav#menu2{
         margin-left: 0px;
         display: block;
         /*visibility: visible;*/
     }
-    header>div.burger:hover div#menu2 a{
+    header>div.burger:hover nav#menu2 a{
         border-top: none;
+    }
+    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souris passe*/
+        font-weight: bolder;
+        color: var(--header-link-hover);
     }
  }
 
