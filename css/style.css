@@ -23,6 +23,7 @@ main{
 }
 
 #ancre{
+    width : 50px;
     position : fixed;
     top : 87%;
     left: 90%;
