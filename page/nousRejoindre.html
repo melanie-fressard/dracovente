@@ -3,16 +3,17 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/ico" href="../images/logo.ico">
-        <title>Accueil</title>
+        <title>Nous Rejoindre</title>
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../css/metiers.css">
     </head>
     <body>
-            <header>
+                        <header>
               <div class="burger">
                 <img src="../images/burger.png" alt="burger" width="100px">
-                <div id="menu2">
+                <nav id="menu2">
                   <div><a href="index.html">Accueil</a></div>
                   <div><a href="./contacts.html">Contacts</a></div>
                   <div><a href="./equipe.html">Équipe</a></div>
@@ -20,7 +21,7 @@
                   <div><a href="./presse.html">Presse</a></div>
                   <div><a href="./faq.html">F.A.Q</a></div>
                   <div><a href="./nousRejoindre.html">Nous Rejoindre</a></div>
-                </div>
+                </nav>
               </div>
             <nav>
                 <div>
@@ -54,22 +55,44 @@
         </header>
 
         <main>
-        Nous avons trois offres en ce moment, jetez-y un coup d'œil :
-        <div><a href="./metierI.html">Ensorceleur·euse</a></div>
-        <div><a href="./metierII.html">Infirmière Joëlle</a></div>
-        <div><a href="./metierIII.html">Marcheur·euse</a></div>
-        
+            <h1>RECRUTEMENT</h1>
+            <h3>Nous avons trois offres en ce moment, jetez-y un coup d'œil :</h3>
+<!--TABLEAU-->
+        <table>
+<!--Tête du tableau-->
+            <thead>
+                <tr>
+                    <th>TITRE</th>
+                    <th>FAMILLE DE METIER</th>
+                    <th>LIEU</th>
+                </tr>
+            </thead>
+<!--Corps du tableau-->
+            <tbody>
+                <tr>
+                    <td><a href="./metierI.html">Ensorceleur·euse</a></td>
+                    <td>Magie</td>
+                    <td>Montpellier, France</td>
+                </tr>
+                <tr>
+                    <td><a href="./metierII.html">Infirmière Joëlle</a></td>
+                    <td>Soins</td>
+                    <td>Montpellier, France</td>
+                </tr>
+                <tr>
+                    <td><a href="./metierIII.html">Marcheur·euse</a></td>
+                    <td>Sports</td>
+                    <td>Montpellier, France</td>
+                </tr>
+            </tbody>
+        </table>
         </main>
-
         
-        <a href="#" id="ancre"><img src="../images/ancre.png" alt="ancre" width="50px"></a>
-
-        <footer>     
-            <span>© 666-2020</span>
-            <a href="./mentionsLegales.html" class="aFooter">Mentions légales</a>
-        </footer>
+    <a href="#" id="ancre"><img id="ballon" src="../images/ancre.png" alt="ancre"></a>
+    <footer>     
+        <span>© 666-2020</span>
+        <a href="./mentionsLegales.html" class="aFooter">Mentions légales</a>
+    </footer>
 
     </body>
-
-
 </html>

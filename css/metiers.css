@@ -24,7 +24,7 @@ div {
 }
 
 /*Mise en page du texte en latin pour le distinguer visuellement du reste*/
-.blockquote p{
+.latin p{
     text-indent: 35px;
     margin-left: 30px;
     font-style: italic;
@@ -41,3 +41,16 @@ n'a pas besoin de laisser de marge en-dessous car c'est la fin du fieldset*/
     text-align: right;
     margin-bottom: 0px;
 }
+
+/*NousRejoindre*/
+/*Tableau*/
+table {
+    text-align: center;
+    width: 100%;
+}
+tr {margin : auto}
+
+thead {background-color: #1E90FF} /*Couleur de l'arrière-plan du thead*/
+
+tbody tr:nth-child(odd) {background-color: white} /*Couleur de l'arrière-plan des lignes impaires du tbody*/
+tbody tr:nth-child(even) {background-color: #DCDCDC} /*Couleur de l'arrière-plan des lignes paires du tbody. #DCDCDC=lightgrey*/
