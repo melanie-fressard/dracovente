@@ -5,7 +5,7 @@ h1{
 }
 
 /*Centrer les puces*/
-#un, #deux, #trois, #quatre, #cinq, #six, #sept, #huit, #neuf, #dix {text-align: center;}
+#un, #deux, #trois, #quatre, #cinq, #six, #sept, #huit, #neuf, #dix, #onze {text-align: center;}
 
 fieldset {
 	margin-bottom: 20px;
@@ -15,4 +15,11 @@ h2 {
 	color: #4043A4;
 }
 
-
+/*Bouton lien vers Contacts*/
+.CheminContacts {
+	text-align: center;
+	background-color: #FCC499;
+    border: #b3794e solid 2px;
+    padding: 10px;
+    border-radius: 25px;
+}
