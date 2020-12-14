@@ -73,7 +73,7 @@ a#ancre>img {/*Configure la taille de l'ancre*/
         font-size: 25px;
     }
 
-    a:-webkit-any-link {
+    a:-webkit-any-link {/*Affecte tous les liens du site*/
         color: rgb(151, 14, 10);
         cursor: pointer;
         text-decoration: none;
