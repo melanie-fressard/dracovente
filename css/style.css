@@ -113,7 +113,7 @@ main{
 
 
 
-@media screen and (min-width: 481px) and (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
+@media (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
     body{
         background-size: 100%;
     }
@@ -161,7 +161,8 @@ main{
     }*/
 
     div.burger>div#menu2{
-        visibility: hidden;
+        display: none;
+        /*visibility: hidden; Pas de visibility sinon la souris passant dessus le révele sans avoir touché le burger*/
         width: 800px;
         position: relative;
         font-size: 30px;
@@ -169,9 +170,8 @@ main{
 
     header>div.burger:hover div#menu2{
         margin-left: 0px;
-        visibility: visible;
-        /*margin-right: -250px;*/
-        /*right: 10%;*/
+        display: block;
+        /*visibility: visible;*/
     }
     header>div.burger:hover div#menu2 a{
         border-top: none;
