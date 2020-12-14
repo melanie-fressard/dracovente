@@ -79,7 +79,7 @@ a#ancre>img {/*Configure la taille de l'ancre*/
         text-decoration: none;
     }
 
-    .submenu{
+    .submenu{/*Donne les caractéristiques des elements du menu déroulant des métiers*/
         display: none;
         margin: 0px 0px 0px 0px;
         background-color: var(--header-color-bg);
@@ -89,9 +89,8 @@ a#ancre>img {/*Configure la taille de l'ancre*/
         border-top-right-radius: 0px;
     }
 
-    nav>div:hover .submenu{
+    nav>div:hover .submenu{/*Quand la souris passe dessus on ouvre les submenus*/
         display: block;
-        font-weight: normal;/*Empèche les submenus de se mettre en gras quand la souris passe dessus*/
     }
 
     nav div a:hover{/*Met en gras et en couleur la fiche métier sur laquelle passe la souris*/
@@ -99,12 +98,12 @@ a#ancre>img {/*Configure la taille de l'ancre*/
         color: var(--header-link-hover);
     }
 
-    nav>div.conteneur:hover {
+    nav>div.conteneur:hover {/*Rétabli les angles de "nous rejoindre" afin de ne pas avoir d'espace avec ses sous-menus*/
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    .burger{
+    .burger{/*Cache le burger*/
         display: none;
     }
 }
