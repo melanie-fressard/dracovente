@@ -41,3 +41,17 @@ section{
 img.logo{
     width: 40px;
 }
+
+@media (min-width:999px){
+
+}
+
+@media(min-width:481) and (max-width:998){
+    article{
+        width: 100%;
+
+    }
+    aside{
+        display: none;
+    }
+}

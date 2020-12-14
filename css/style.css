@@ -151,6 +151,10 @@ main{
         left :70%;
         font-size: 20px;
     }
+    div.burger img{
+        width: 50px;
+        height: 50px;
+    }
 
     /*div.burger>img{
         width: 100px;
