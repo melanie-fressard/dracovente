@@ -1,0 +1,18 @@
+h1{
+	background-color: #3D7DCA; /*Change la couleur d'arrière-plan du texte*/
+	color: #FFCB05; /*Change la couleur du texte*/
+    text-align: center; /*Mets le texte au centre*/
+}
+
+/*Centrer les puces*/
+#un, #deux, #trois, #quatre, #cinq, #six, #sept, #huit, #neuf, #dix {text-align: center;}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: #4043A4;
+}
+
+

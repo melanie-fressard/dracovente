@@ -1,11 +1,11 @@
+
 article{
-    background-color: rgb(161, 161, 187);
+    background-color: var(--main-color-bg);
     margin: 15px 15px 0px 15px;
     padding: 5px 5px;
     display: flex;
     flex-direction: column;
-    flex-grow: 8;/*Je cherche à rendre le article plus grand que le asside mais ça ne marche pas*/
-    
+    width: 70%;
 }
 /*
 section{
@@ -17,11 +17,13 @@ section{
 */
 
 aside{
-    background-color: rgb(191, 123, 255);
+    background-color: var(--main-color-bg);
     margin: 15px 15px 0px 15px;
     padding: 5px 5px;
     display: flex;
-    flex-grow: 1;
+    width: 30%;
+    flex-direction: column;
+
 }
 
 main{
@@ -29,4 +31,13 @@ main{
     flex-direction: row;
     background: none;
     padding: 0px 0px;
+}
+
+section{
+    margin-bottom: 25px;
+    border: 1px solid black;
+}
+
+img.logo{
+    width: 40px;
 }
