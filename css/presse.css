@@ -42,16 +42,16 @@ img.logo{
     width: 40px;
 }
 
-@media (min-width:999px){
 
-}
-
-@media(min-width:481) and (max-width:998){
+@media (max-width:999px){
     article{
         width: 100%;
 
     }
     aside{
-        display: none;
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
     }
 }
