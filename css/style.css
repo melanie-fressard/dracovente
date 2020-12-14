@@ -183,13 +183,17 @@ main{
  }
 
  /*************FOOTER**************************/
+ 
+    footer{visibility: hidden;}
+
 
  
-@media screen and (min-width:999px){
+@media screen and (min-width:768px){
     footer{
         background-color: var(--header-color-bg);
         width:100%;
         text-align: center;
+        visibility: visible;
     }
     body footer a.aFooter{
         font-size: 16px;
@@ -203,7 +207,3 @@ main{
     
     }
     
-    @media screen and (max-width:999px){
-        footer{display: none;}
-    
-    }
