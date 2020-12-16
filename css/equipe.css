@@ -16,6 +16,7 @@ h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 	/*Change la couleur d'arrière-plan en jaune*/
 	text-align: center;
 }
+
 .fressard{
 	background-color: #F59BAD;
 	/*Change la couleur d'arrière-plan en rose*/
@@ -23,12 +24,14 @@ h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 	clear: left;
 	/*Ne pas avoir d'images sur le coté gauche. En l'occurence, la photo des personnes.*/
 }
+
 .gavioli{
 	background-color: #3B4CCA;
 	/*Change la couleur d'arrière-plan en bleu*/
 	text-align: center;
 	clear: left;
 }
+
 .viguier{
 	background-color: #FF0000;
 	/*Change la couleur d'arrière-plan en rouge*/
@@ -36,11 +39,9 @@ h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 	clear: left;
 }
 
-
 .photo{
 	float: left;
 }
-
 
 p {
     text-indent: 20px; /*Alinéa*/

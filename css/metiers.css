@@ -22,9 +22,11 @@ p {
 div {
     text-indent: 20px;
 }
+
 nav div{/*Empèche le header de se décaler aussi*/
     text-indent: 0px;
 }
+
 /*Mise en page du texte en latin pour le distinguer visuellement du reste*/
 .latin p{
     text-indent: 35px;
@@ -54,6 +56,7 @@ table {
     width: 100%; /*Le tableau prend toute la place sur la page*/
     
 }
+
 tr {margin : auto}
 
 thead {
@@ -62,4 +65,5 @@ thead {
 }
 
 tbody tr:nth-child(odd) {background-color: white} /*Couleur de l'arrière-plan des lignes impaires du tbody*/
+
 tbody tr:nth-child(even) {background-color: #DCDCDC} /*Couleur de l'arrière-plan des lignes paires du tbody. #DCDCDC=lightgrey*/
