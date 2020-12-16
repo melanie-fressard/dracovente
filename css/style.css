@@ -189,7 +189,14 @@ a#ancre>img {/*Configure la taille de l'ancre*/
 
  /*************FOOTER**************************/
  
-    footer{visibility: hidden;}
+    footer{visibility: hidden;
+
+    }
+
+    footer.absolu{/*Permet un bon affichage des pages trop petites*/
+        position: absolute;
+        bottom: 10px;
+    }
 
 
  
@@ -209,6 +216,7 @@ a#ancre>img {/*Configure la taille de l'ancre*/
         font-size: 16px;
         margin: 0px 30px;
     }
-    
+
+
     }
     
