@@ -1,27 +1,27 @@
-@media(max-width: 1163px) /* Enlève le bloc raptincel pour éviter de surchager la page */
-{
+/* Enlève le bloc raptincel pour éviter de surchager la page */
+@media(max-width: 1163px) {
     div#raptincel_block
     {
         display: none;
     }
 }
 
-@media(max-width: 507px) /* Le contour du slogan s'enlève quand la taille de l'écran est en dessous de 507 pixels */
-{
+/* Le contour du slogan s'enlève quand la taille de l'écran est en dessous de 507 pixels */
+@media(max-width: 507px) {
     blockquote span#slogan
     {
         border: none;
     }
 }
 
-@font-face /* Ajout d'une police d'écriture qu'on nommera pokemon */
-{
+/* Ajout d'une police d'écriture qu'on nommera pokemon */
+@font-face {
     font-family: "pokemon";
     src: url(../font/PokemonSolid.ttf);
 }
 
-main /* Bloc main qui rassemble tout le contenu de la page */
-{
+/* Bloc main qui rassemble tout le contenu de la page */
+main {
     width: 80%;
     background-color: rgba(255,255, 240, 0.9);
     margin: 0 auto;
@@ -29,36 +29,34 @@ main /* Bloc main qui rassemble tout le contenu de la page */
     margin-bottom: 20px;
     text-align: center;
     border: solid black 1px;
-
 }
 
-blockquote /**/
-{
+/* Bloc ayant pour contenu le slogan de notre entreprise */
+blockquote {
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-
-span#slogan                     /* Le slogan de notre entreprise : Pokémon, achetez-les tous ! + rajout de la police d'écriture sur le slogan*/
-{
+/* Le slogan de notre entreprise : Pokémon, achetez-les tous ! + rajout de la police d'écriture sur le slogan */
+span#slogan {
     border: #3A3F43 double thick;
     padding: 10px;
     font-family: pokemon;
     color: #53585a;
 }
 
-#entreprise_block               /* Donne un fond gris/noir au bloc */
-{
+/* Donne un fond gris/noir au bloc */
+#entreprise_block {
     background-color: #3A3F43;
 }
 
-#contenue_entreprise            /* Met le contenu en ligne */
-{
+/* Met le contenu en ligne */
+#contenue_entreprise {
     display: inline;
 }
 
-div#entreprise_block div#contenue_entreprise p /* Placement du texte + couleur du texte en blanc */
-{
+/* Placement du texte + couleur du texte en blanc */
+div#entreprise_block div#contenue_entreprise p {
     color: white;
     padding-bottom: 50px;
     padding-top: 20px;
@@ -66,15 +64,15 @@ div#entreprise_block div#contenue_entreprise p /* Placement du texte + couleur d
     margin-left: 30px;
 }
 
-div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a dans le bloc de l'entreprise */
-{
+/* Modifie le lien qu'il y a dans le bloc de l'entreprise */
+div#entreprise_block div#contenue_entreprise p a {
     text-decoration: none;
     color: darkorange;
     font-size: 25px;
 }
 
-#logo /* Modifie le logo présent dans le logo entreprise */
-{
+/* Modifie le logo présent dans le logo entreprise */
+#logo {
     width: 10%;
     height: 10%;
     margin-top: 20px;
@@ -83,13 +81,13 @@ div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a da
     border-radius: 100px;
 }
 
-#img_block /* Met les image de Dracaufeu en ligne */
-{
+/* Met les image de Dracaufeu en ligne */
+#img_block {
     display: inline;
 }
 
-.img_dracaufeu /* Modifie les images de Dracaufeu + ajout de bordure arrondi */
-{
+/* Modifie les images de Dracaufeu + ajout de bordure arrondi */
+.img_dracaufeu {
     width: 20%;
     height: 20%;
     border: #3A3F43 solid 1px;
@@ -97,34 +95,34 @@ div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a da
     padding: 10px;
 }
 
-#draco_x /* Modifie la première image */
-{
+/* Modifie la première image */
+#draco_x {
     margin-top: 20px;
 }
 
-#draco_o /* Modifie la seconde image */
-{
+/* Modifie la seconde image */
+#draco_o {
     padding-top: 25.39px;
 }
 
-#draco_y /* Modifie la troisème image */
-{
+/* Modifie la troisème image */
+#draco_y {
     padding-top: 19.91px;
 }
 
-#draco_g /* Modifie la dernière image */
-{
+/* Modifie la dernière image */
+#draco_g {
     width: 18%;
     height: 18%;
 }
 
-.img_dracaufeu:hover /* Augmente la bordure de l'image quand la souris de l'utilisateur passe dessus */
-{
+/* Augmente la bordure de l'image quand la souris de l'utilisateur passe dessus */
+.img_dracaufeu:hover {
     border: #3A3F43 solid 3px;
 }
 
-#egg_block /* Modifie le bloc qui contient l'oeuf et son texte */
-{
+/* Modifie le bloc qui contient l'oeuf et son texte */
+#egg_block {
     background-color: #3A3F43;
     width: 100%;
     display: inline-block;
@@ -133,29 +131,28 @@ div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a da
     margin-bottom: 50px;
     margin-left: 0;
     margin-right: 0;
-
 }
 
-.contenue_egg /* Modifie le placement de l'image oeuf avec son texte */
-{
+/* Modifie le placement de l'image oeuf avec son texte */
+.contenue_egg {
     margin: 50px 0;
 }
 
-#egg_img /* Met l'image oeuf à gauche en float et met obligatoirement 40px d'écart à gauche */
-{
+/* Met l'image oeuf à gauche en float et met obligatoirement 40px d'écart à gauche */
+#egg_img {
     float: left;
     margin-left: 40px;
 }
 
-#egg_txt /* Modifie l'emplacement, la couleur ainsi que l'alignement du texte du bloc oeuf */
-{
+/* Modifie l'emplacement, la couleur ainsi que l'alignement du texte du bloc oeuf */
+#egg_txt {
     margin: 30px;
     color: white;
     text-align: center;
 }
 
-#raptincel_block /* Modifie le bloc raptincel en donnat une couleur de fond, un placement + bordure */
-{
+/* Modifie le bloc raptincel en donnat une couleur de fond, un placement + bordure */
+#raptincel_block {
     background-color: #3A3F43;
     width: 50%;
     height: 270px;
@@ -164,50 +161,50 @@ div#entreprise_block div#contenue_entreprise p a /* Modifie le lien qu'il y a da
     border: black solid 2px;
 }
 
-#raptincel_img /* Modifie l'image du reptincel */
-{
+/* Modifie l'image du reptincel */
+#raptincel_img {
     float:left;
     margin-top: 15px;
     margin-left: 20px;
     background-color:  #727272;
 }
 
-div#raptincel_block > p /* Modifie le texte present dans le bloc raptincel */
-{
+/* Modifie le texte present dans le bloc raptincel */
+div#raptincel_block > p {
     color: white;
     padding: 10px 15px 10px 15px ;
 }
 
-p > .musiclink /* Donne une couleur, un taille et enlève le surlignement aux lien qui renvoie à deux musiques */
-{
+/* Donne une couleur, un taille et enlève le surlignement aux lien qui renvoie à deux musiques */
+p > .musiclink {
     color: darkorange;
     text-decoration: none;
     font-size: 18px;
 }
 
-div#usedraco /* Met une couleur de fond + une bordure */
-{
+/* Met une couleur de fond + une bordure */
+div#usedraco {
     background: #3A3F43;
     border: black solid 1px;
 }
 
-#img_monture /* Image du Dracaufeu avec un selle  */
-{
+/* Image du Dracaufeu avec un selle  */
+#img_monture {
     width: 50%;
     height: 50%;
     border: black solid 1px;
 }
 
-#img_livreur /* Image du Dracaufeu livreur */
-{
+/* Image du Dracaufeu livreur */
+#img_livreur {
     width: 50%;
     height: 50%;
     border: black solid 1px;
     margin-bottom: 40px;
 }
 
-p.txt_usedraco /* Texte au dessus des deux images */
-{
+/* Texte au dessus des deux images */
+p.txt_usedraco {
     color: white;
     margin-left: 20px ;
     margin-right: 20px ;
@@ -215,19 +212,19 @@ p.txt_usedraco /* Texte au dessus des deux images */
     margin-bottom: 40px;
 }
 
-div#CommandButton /* Emplacement du bouton "commander" */
-{
+/* Emplacement du bouton "commander" */
+div#CommandButton {
     margin-top: 50px;
     margin-bottom: 20px;
 }
 
-#order_link /* Enlève le surlignement du lien  */
-{
+/* Enlève le surlignement du lien  */
+#order_link {
     text-decoration: none;
 }
 
-#order_txt /* Donne un fond, une bordure (arrondie sur les coins) au bouton "commander" */
-{
+/* Donne un fond, une bordure (arrondie sur les coins) au bouton "commander" */
+#order_txt {
     background-color: #FCC499;
     border: #b3794e solid 2px;
     padding: 10px;
@@ -235,8 +232,8 @@ div#CommandButton /* Emplacement du bouton "commander" */
     border-radius: 25px;
 }
 
-#order_txt:hover /* Change la couleur du texte du bouton "commander" quand la souris de l'utilisateur passe dessus. */
-{
+/* Change la couleur du texte du bouton "commander" quand la souris de l'utilisateur passe dessus. */
+#order_txt:hover {
     color: #215c8d;
     transition: 0.2s;
 }
