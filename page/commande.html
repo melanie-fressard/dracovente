@@ -56,7 +56,7 @@
                         <p>
                             <div>
                                 <p>
-                                    <label for="surname">Nom et Prénom :</label>
+                                    <label for="surname">Nom et Prénom* :</label>
                                     <input id="surname" name="uname" type="text" required="">
                                     <input id="firstname" name="firstname" type="text" required="">
                                 </p>
@@ -89,13 +89,13 @@
                             </div>
 
                             <div>
-                                <label for="mail">Email :</label>
+                                <label for="mail">Email* :</label>
 
                             <!--inscription en quelque sorte-->
 
                                 <input id="mail" name="mail" type="email" placeholder="exemple@domain.com" required="">
                             </div>
-                            <label for="passwd">Mot de passe :</label>
+                            <label for="passwd">Mot de passe* :</label>
                             <input id="passwd" name="passwd" type="password" required="" pattern="[a-zA-Z0-9]+" minlength="8">
                           </p>
                     </fieldset>
@@ -153,6 +153,8 @@
 
 
                   <input type="submit" value="Envoyer">
+
+                  <div>*Champs obligatoires</div>
                 </form>
             </div>
         </main>
