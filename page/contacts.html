@@ -1,153 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head><title>Contactez nous</title><meta charset="UTF-8"> 
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/commandeETcontact.css">
-    <script type= "text/javascript" src="../js/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/ico" href="../images/logo.ico">
-</head>
+    <head><title>Contactez nous</title><meta charset="UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/commandeETcontact.css">
+        <script type= "text/javascript" src="../js/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/ico" href="../images/logo.ico">
+    </head>
 
-<body>
-	<header>
-        <div class="burger">
-          <img src="../images/burger.png" alt="burger" width="100px">
-          <nav id="menu2">
-            <div><a href="index.html">Accueil</a></div>
-            <div><a href="./contacts.html">Contacts</a></div>
-            <div><a href="./equipe.html">Équipe</a></div>
-            <div><a href="./produit.html">Produit</a></div>
-            <div><a href="./presse.html">Presse</a></div>
-            <div><a href="./faq.html">F.A.Q</a></div>
-            <div><a href="./nousRejoindre.html">Nous Rejoindre</a></div>
-          </nav>
-        </div>
-      <nav>
-          <div>
-              <a href="index.html">Accueil</a>
-          </div>
-          <div>
-              <a href="./contacts.html">Contacts</a>
-          </div>
-          <div>
-              <a href="./equipe.html">Équipe</a>
-          </div>
-          <div>
-              <a href="./produit.html">Produit</a>
-          </div>
-          <div>
-              <a href="./presse.html">Presse</a>
-          </div>
-          <div>
-            <a href="./faq.html">F.A.Q</a>
-          </div>
-          <div class="conteneur">
-              <a href="./nousRejoindre.html">Nous Rejoindre</a>
-              
-              <div class="submenu">
-                  <div><a href="./metierI.html">Ensorceleur·euse</a></div>
-                  <div><a href="./metierII.html">Infirmière Joëlle</a></div>
-                  <div><a href="./metierIII.html">Marcheur·euse</a></div>
-              </div>
-          </div>
-      </nav>
-  </header> <!--header commun-->
+    <body>
+        <header>
+            <div class="burger">
+            <img src="../images/burger.png" alt="burger" width="100px">
+            <nav id="menu2">
+                <div><a href="index.html">Accueil</a></div>
+                <div><a href="./contacts.html">Contacts</a></div>
+                <div><a href="./equipe.html">Équipe</a></div>
+                <div><a href="./produit.html">Produit</a></div>
+                <div><a href="./presse.html">Presse</a></div>
+                <div><a href="./faq.html">F.A.Q</a></div>
+                <div><a href="./nousRejoindre.html">Nous Rejoindre</a></div>
+            </nav>
+            </div>
+        <nav>
+            <div>
+                <a href="index.html">Accueil</a>
+            </div>
+            <div>
+                <a href="./contacts.html">Contacts</a>
+            </div>
+            <div>
+                <a href="./equipe.html">Équipe</a>
+            </div>
+            <div>
+                <a href="./produit.html">Produit</a>
+            </div>
+            <div>
+                <a href="./presse.html">Presse</a>
+            </div>
+            <div>
+                <a href="./faq.html">F.A.Q</a>
+            </div>
+            <div class="conteneur">
+                <a href="./nousRejoindre.html">Nous Rejoindre</a>
+                
+                <div class="submenu">
+                    <div><a href="./metierI.html">Ensorceleur·euse</a></div>
+                    <div><a href="./metierII.html">Infirmière Joëlle</a></div>
+                    <div><a href="./metierIII.html">Marcheur·euse</a></div>
+                </div>
+            </div>
+        </nav>
+    </header> <!--header commun-->
 
-<!--les contacts-->
+    <!--les contacts-->
 
-<main>
-  <div class="contact">
-    <form action="machin.php" method="get">
+        <main>
+            <div class="contact">
+                <form action="machin.php" method="get">
+                    <fieldset>
+                        <legend>Informations personnelles</legend>
+                            <!--info perso-->
+                            <p>
+                                <div><label for="surname">Nom* :</label>
+                                    <input id="surname" name="uname" type="text" required="">
+                                </div>
 
-            <fieldset>
-        <legend>Informations personnelles</legend>
+                                <div><label for="firstname">Prénom :</label>
+                                    <input id="firstname" name="firstname" type="text">
+                                </div>
 
-<!--info perso-->
-<p>
-<div><label for="surname">Nom* :</label>
-    <input id="surname" name="uname" type="text" required="">
-</div>
+                                <div><label for="mail">Email* :</label>
+                                    <input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required="">
+                                </div> <!--doit respecter la forme pour accepter l'input-->
 
-<div><label for="firstname">Prénom :</label>
-    <input id="firstname" name="firstname" type="text">
-</div>
+                                <div><label for="code">Code Postal :</label>
+                                    <input id="code" name="postal" type="text" placeholder="ex 87400" pattern="^(?:[0-8]\d|9[0-8])\d{3}$">
+                                </div><!--pattern accepte que les codes postaux francais-->
 
-<div><label for="mail">Email* :</label>
-    <input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required="">
-</div> <!--doit respecter la forme pour accepter l'input-->
+                                <div><label for="country-select">Lieu de résidence :</label></div>
 
-<div><label for="code">Code Postal :</label>
-    <input id="code" name="postal" type="text" placeholder="ex 87400" pattern="^(?:[0-8]\d|9[0-8])\d{3}$">
-</div><!--pattern accepte que les codes postaux francais-->
+                                <div><select name="country" id="country-select">
+                                    <option value="">--Choisissez une option--</option>
+                                    <option value="de">Allemagne</option>
+                                    <option value="au">Australie</option>
+                                    <option value="br">Brésil</option>
+                                    <option value="ca">Canada</option>
+                                    <option value="ch">Chine</option> 
+                                    <option value="eg">Egypte</option>
+                                    <option value="es">Espagne</option>
+                                    <option value="fr">France</option>
+                                    <option value="in">Inde</option>
+                                    <option value="jp">Japon</option>
+                                    <option value="po">Portugal</option>
+                                    <option value="uk">Royaume-Uni</option>
+                                    <option value="su">Russie</option>
+                                    <option value="tv">Tuvalu</option>
+                                    <option value="us">USA</option>
+                                    </select></div>
+                            </p>
+                    </fieldset>
+            
+                        <!--partie question-->
+                            <p>
+                                <div><label for="where-select">Comment avez-vous entendu parler de notre société ?</label><br>
 
-<div><label for="country-select">Lieu de résidence :</label></div>
+                                <input id="web" name="where" type="checkbox">Notre site Web<br>
+                                <input id="resc" name="where" type="checkbox">Un moteur de recherche<br>
+                                <input id="reco" name="where" type="checkbox">Une recommandation<br>
+                                <input id="emp" name="where" type="checkbox">Par l’un de nos employés<br>
+                                <input id="med" name="where" type="checkbox">Par les médias<br>
+                                <input id="check" name="where" onChange="verif();" type="checkbox">Autre  
 
-<div><select name="country" id="country-select">
-    <option value="">--Choisissez une option--</option>
-    <option value="de">Allemagne</option>
-    <option value="au">Australie</option>
-    <option value="br">Brésil</option>
-    <option value="ca">Canada</option>
-	<option value="ch">Chine</option> 
-	<option value="eg">Egypte</option>
-	<option value="es">Espagne</option>
-	<option value="fr">France</option>
-	<option value="in">Inde</option>
-	<option value="jp">Japon</option>
-	<option value="po">Portugal</option>
-    <option value="uk">Royaume-Uni</option>
-    <option value="su">Russie</option>
-    <option value="tv">Tuvalu</option>
-    <option value="us">USA</option>
-    </select></div>
-</p>
-            </fieldset>
-    
-<!--partie question-->
-<p>
-<div><label for="where-select">Comment avez-vous entendu parler de notre société ?</label><br>
+                                <!--si la case n'est pas cochée, la case de texte n'apparait pas-->
 
-  <input id="web" name="where" type="checkbox">Notre site Web<br>
-  <input id="resc" name="where" type="checkbox">Un moteur de recherche<br>
-  <input id="reco" name="where" type="checkbox">Une recommandation<br>
-  <input id="emp" name="where" type="checkbox">Par l’un de nos employés<br>
-  <input id="med" name="where" type="checkbox">Par les médias<br>
-  <input id="check" name="where" onChange="verif();" type="checkbox">Autre  
+                                <input id="2" class="off" name="where" type="text"></textarea>
+                                </div>
+                            </p> 
+                            <p>
+                                <div><label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
+                                    <input id="date" name="date" type="date" required="">
+                                </div>
+                            </p>
+                                <!--le message-->
 
-<!--si la case n'est pas cochée, la case de texte n'apparait pas-->
+                                <div><p><label for="message">Votre message* :</label></p>
+                                    <textarea name="message" placeholder="Ecrivez votre message ici !" required=""></textarea>
 
-  <input id="2" class="off" name="where" type="text"></textarea>
-</p>
-</div>
-<p>
-<div><label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
-    <input id="date" name="date" type="date" required="">
-</div>
-</p>
-<!--le message-->
+                                </div>
 
-<div><p><label for="message">Votre message* :</label></p>
-    <textarea name="message" placeholder="Ecrivez votre message ici !" required=""></textarea>
+                                <label for="lu">J’ai bien lu les <a href="./mentionsLegales.html">mentions légales</a> que je n’ai pas lues*</label>
+                                <input id="lu" name="lu"  onChange="echange(); " type="checkbox" required="">
 
-</div>
+                                <!--par defaut le envoyer disabled est affiché, lorsque la case est cochée, le bouton envoyer est accessible-->
+                                <input id="1" class="off" value="Envoyer" type="submit">
+                                <input id="3" class="on" value="Envoyer" type="submit" disabled>
 
-<label for="lu">J’ai bien lu les <a href="./mentionsLegales.html">mentions légales</a> que je n’ai pas lues*</label>
-<input id="lu" name="lu"  onChange="echange(); " type="checkbox" required="">
-
-<!--par defaut le envoyer disabled est affiché, lorsque la case est cochée, le bouton envoyer est accessible-->
-  <input id="1" class="off" value="Envoyer" type="submit">
-  <input id="3" class="on" value="Envoyer" type="submit" disabled>
-
-  <div>* Champs obligatoires</div>
-</form>
-</div>
-</main>
-<a href="#" id="ancre"><img id="ballon" src="../images/ancre.png" alt="ancre"></a>
-
-<footer>     
-    <span>© 666-2020</span>
-    <a href="./mentionsLegales.html" class="aFooter">Mentions légales</a>
-</footer>
-<!--footer commun-->
-</body>
+                                <div>* Champs obligatoires</div>
+                </form>
+            </div>
+        </main>
+        <!--footer commun-->
+        <a href="#" id="ancre"><img id="ballon" src="../images/ancre.png" alt="ancre"></a>
+        <footer>     
+            <span>© 666-2020</span>
+            <a href="./mentionsLegales.html" class="aFooter">Mentions légales</a>
+        </footer>
+    </body>
 </html>
