@@ -6,6 +6,7 @@ main .contact {
     text-align: center;
 }
 
+/*variable pour le javascript*/
 .on {
     visibility: visible;
 }
@@ -14,6 +15,7 @@ main .contact {
     display: none;
     }
 
+/*taille des images*/
 .vingt {
  width: 20px;
 }
@@ -28,4 +30,12 @@ main .contact {
 
 .sept {
     width: 17px;
+}
+
+fieldset{ /*met le fond en gris et arrondi les coins*/
+    background-color: #4b4f5377 ;
+    border:2px solid ;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
 }
