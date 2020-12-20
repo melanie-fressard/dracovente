@@ -189,23 +189,23 @@ a#ancre>img {/*Configure la taille de l'ancre*/
 
  /*************FOOTER**************************/
  
-footer{visibility: hidden;}
+footer{visibility: hidden;}/*Suppression du footer sur les petits ecrants pour l'estétique*/
 
-footer.absolu{/*Permet un bon affichage des pages trop petites*/
+footer.absolu{/*Permet un bon affichage des pages trop vides*/
         position: absolute;
         bottom: 10px;
 }
 
 
  
-@media screen and (min-width:768px){
+@media screen and (min-width:768px){/*Caracteristiques du footer sur les pages classiques */
     footer{
         background-color: var(--header-color-bg);
         width:100%;
         text-align: center;
         visibility: visible;
     }
-    body footer a.aFooter{
+    body footer a.aFooter{/*On specifie les caracteristiques des balise a du footer pour qu'elles ne soient pas modifie*/
         font-size: 16px;
         margin: 0px 30px;
         color:black;
