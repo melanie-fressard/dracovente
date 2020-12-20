@@ -39,7 +39,14 @@ section{
 img.logo{
     width: 40px;
 }
-
+@media (min-width:999px){/*Quand le graphique est en petit, passer la souris dessus l'agrandi*/
+    img.graph:hover{
+        position: fixed;
+        left: 15%;
+        top: 15%;
+        transition:1500ms;
+    }
+}
 
 @media (max-width:999px){
     article{
