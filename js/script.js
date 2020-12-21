@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function verif () //affiche un element si la case est cochée
   {
-      var etat = document.getElementById('check').checked;
+      var etat2 = document.getElementById('check').checked;
        
-      if(!etat)
+      if(!etat2)
       {
           document.getElementById('2').className = 'off';
       }
