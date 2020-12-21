@@ -39,9 +39,9 @@ fieldset div {
     margin-bottom: 20px;
 }
 
-/*classe co s'aligne avec la bordure de droite et
+/*classe droite s'aligne avec la bordure de droite et
 n'a pas besoin de laisser de marge en-dessous car c'est la fin du fieldset*/
-.co {
+.droite {
     text-align: right;
     margin-bottom: 0px;
 }
