@@ -48,6 +48,8 @@ span#slogan {
 /* Donne un fond gris/noir au bloc */
 #entreprise_block {
     background-color: #3A3F43;
+    border: black solid 2px;
+    margin-bottom: 20px;
 }
 
 /* Met le contenu en ligne */
@@ -58,7 +60,7 @@ span#slogan {
 /* Placement du texte + couleur du texte en blanc */
 div#entreprise_block div#contenue_entreprise p {
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     padding-top: 20px;
     margin-right: 30px;
     margin-left: 30px;
@@ -73,11 +75,12 @@ div#entreprise_block div#contenue_entreprise p a {
 
 /* Modifie le logo présent dans le logo entreprise */
 #logo {
-    width: 10%;
-    height: 10%;
+    width: 12%;
+    height: 12%;
     margin-top: 20px;
     background-color: #F2684A;
     padding: 30px;
+    border: #8c8b8b solid 3px;
     border-radius: 100px;
 }
 
@@ -182,7 +185,7 @@ p > .musiclink {
 /* Met une couleur de fond + une bordure */
 div#usedraco {
     background: #3A3F43;
-    border: black solid 1px;
+    border: black solid 2px;
 }
 
 /* Image du Dracaufeu avec un selle  */
