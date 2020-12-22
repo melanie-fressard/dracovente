@@ -37,6 +37,13 @@ a#ancre>img {/*Configure la taille de l'ancre*/
     height: auto;
 }
 
+/* Donne une dimension et un placement aux logos des réseaux sociaux */
+.social_icon {
+    width: 3%;
+    height: 3%;
+    margin: 10px 10px 10px 10px;
+}
+
 @media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
 
     header{/*Organisation du header sans burger*/
@@ -195,8 +202,6 @@ footer.absolu{/*Permet un bon affichage des pages trop vides*/
         position: absolute;
         bottom: 10px;
 }
-
-
  
 @media screen and (min-width:768px){/*Caracteristiques du footer sur les pages classiques */
     footer{
