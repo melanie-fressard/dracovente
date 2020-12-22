@@ -124,6 +124,42 @@ div#entreprise_block div#contenue_entreprise p a {
     border: #3A3F43 solid 3px;
 }
 
+/* Bloc contenant les prix des différents Dracaufeu */
+#price_block {
+    background-color: #3A3F43;
+    border: black solid 2px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    align-items: center;
+}
+
+/* Bloc contenant l'image et le texte lié à un Dracaufeu */
+.price_content {
+    border-bottom: solid black 2px;
+    margin-top: 30px;
+    color: white;
+}
+
+/* Agis sur les images des différents Dracaufeu */
+.price_content img {
+    border: solid black 1px;
+    width: 50%;
+    height: 50%;
+}
+
+/* Donne une couleur aux prix des différents Dracaufeu */
+.price_nb{
+    color: #e03434;
+}
+
+/* Donne une exception au bloc contenu du dernier Dracaufeu pour éviter que la bordure soit trop épaisse */
+#price_exception
+{
+    border-bottom: none;
+}
+
 /* Modifie le bloc qui contient l'oeuf et son texte */
 #egg_block {
     background-color: #3A3F43;
