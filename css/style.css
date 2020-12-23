@@ -46,7 +46,7 @@ a#ancre>img {/*Configure la taille de l'ancre*/
 
 /*change l'apparence des input */
 input{
-    border-radius: 10px;
+    border-radius: 7px;
     border: none;
     outline: none;
 }
@@ -62,10 +62,13 @@ select:focus{
 
 input:focus{
     border: 2px solid black;
-    background-color: white;
 
 }
-
+header a:-webkit-any-link {/*Change la couleur des liens du header*/
+    color: rgb(151, 14, 10);
+    cursor: pointer;
+    text-decoration: none;
+}
 
 
 
@@ -80,16 +83,16 @@ input:focus{
 
     header nav{/*Positionne le header sans burger*/
         position: fixed;/*On bloque le menu en haut de l'écran*/
-        width: 80%;/*Largeur à remettre à 100% sur les petits écrans*/
-        left: 10%;
-        right: 10%;
+        width: 90%;/*Largeur à remettre à 100% sur les petits écrans*/
+        left: 5%;
+        right: 5%;
         height: 45px;
         display: flex;
         flex-direction: row;
         align-items: stretch;
     }
 
-    nav > div{/*D'occupe de l'apparence du header sans burger*/
+    header nav > div{/*D'occupe de l'apparence du header sans burger*/
         background-color: var(--header-color-bg);
         text-align: center;
         border-radius: 15px;
@@ -97,22 +100,18 @@ input:focus{
         margin: 5px 5px 5px 5px;
     }
 
-    nav > div:hover{/*Augmente la taille de l'élement sur lequel la souris passe*/
-        flex-grow: 2;
-        transition:800ms;/*Permet d'éviter que l'animation soit instantanée*/
+    header nav > div:hover{/*Augmente la taille de l'élement sur lequel la souris passe*/
+        flex-grow: 3;
+        transition:600ms;/*Permet d'éviter que l'animation soit instantanée*/
     }
 
-    nav div a{/*Taille des liens dans le header*/
+    header nav div a{/*Taille des liens dans le header*/
         font-size: 25px;
     }
 
-    a:-webkit-any-link {/*Affecte tous les liens du site*/
-        color: rgb(151, 14, 10);
-        cursor: pointer;
-        text-decoration: none;
-    }
 
-    .submenu{/*Donne les caractéristiques des elements du menu déroulant des métiers*/
+
+    header .submenu{/*Donne les caractéristiques des elements du menu déroulant des métiers*/
         display: none;
         margin: 0px 0px 0px 0px;
         background-color: var(--header-color-bg);
@@ -122,21 +121,21 @@ input:focus{
         border-top-right-radius: 0px;
     }
 
-    nav>div:hover .submenu{/*Quand la souris passe dessus on ouvre les submenus*/
+    header nav>div:hover .submenu{/*Quand la souris passe dessus on ouvre les submenus*/
         display: block;
     }
 
-    nav div a:hover{/*Met en gras et en couleur la fiche métier sur laquelle passe la souris*/
+    header nav div a:hover{/*Met en gras et en couleur la fiche métier sur laquelle passe la souris*/
         font-weight: bolder;
         color: var(--header-link-hover);
     }
 
-    nav>div.conteneur:hover {/*Rétabli les angles de "nous rejoindre" afin de ne pas avoir d'espace avec ses sous-menus*/
+    header nav>div.conteneur:hover {/*Rétabli les angles de "nous rejoindre" afin de ne pas avoir d'espace avec ses sous-menus*/
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
 
-    .burger{/*Cache le burger*/
+    header .burger{/*Cache le burger*/
         display: none;
     }
 }
@@ -164,21 +163,21 @@ input:focus{
         width: 800px;
     }
 
-    div.burger{
+    header div.burger{
         width: 800px;
         position: fixed;
         left :85%;
         top : 2%;
         z-index: 2;
     }
-    div.burger:hover{
+    header div.burger:hover{
         background-color: #FAAA6D;
         padding: 5px 5px 5px 5px;
         margin-left: -50px;
         left :70%;
         font-size: 20px;
     }
-    div.burger img{
+    header div.burger img{
         width: 50px;
         height: 50px;
     }
@@ -187,7 +186,7 @@ input:focus{
         width: 100px;
     }*/
 
-    div.burger>nav#menu2{
+    header div.burger>nav#menu2{
         display: none;
         /*visibility: hidden; Pas de visibility sinon la souris passant dessus le révele sans avoir touché le burger*/
         width: 800px;
