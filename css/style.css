@@ -44,6 +44,20 @@ a#ancre>img {/*Configure la taille de l'ancre*/
     margin: 10px 10px 10px 10px;
 }
 
+/*change l'apparence des input */
+input{
+    background-image: url("../images/fondInput.jpg");
+    border: none;
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid rgb(97, 0, 0);
+    background-image: url("../images/fondInputFocus.jpg");
+
+}
+
+
 @media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
 
     header{/*Organisation du header sans burger*/
