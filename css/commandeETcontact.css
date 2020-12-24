@@ -6,6 +6,10 @@ main .contact {
     text-align: center;
 }
 
+.question {
+    margin-bottom: auto;
+}
+
 /*variable pour le javascript*/
 .on {
     visibility: visible;
