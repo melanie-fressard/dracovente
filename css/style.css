@@ -44,7 +44,7 @@ a#ancre>img {/*Configure la taille de l'ancre*/
     margin: 10px 10px 10px 10px;
 }
 
-/*change l'apparence des input */
+/*change l'apparence des inputs */
 input{
     border-radius: 7px;
     border: none;
@@ -69,7 +69,6 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
     cursor: pointer;
     text-decoration: none;
 }
-
 
 
 
