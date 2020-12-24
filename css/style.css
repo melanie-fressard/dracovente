@@ -39,8 +39,8 @@ a#ancre>img {/*Configure la taille de l'ancre*/
 
 /* Donne une dimension et un placement aux logos des réseaux sociaux */
 .social_icon {
-    width: 3%;
-    height: 3%;
+    width: 2.5%;
+    height: 2%;
     margin: 10px 10px 10px 10px;
 }
 
