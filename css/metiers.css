@@ -10,11 +10,6 @@ h2{
     text-indent: 10px; /*Petit alinéa de 10px*/
 }
 
-h3{
-    color: blue;
-    text-indent: 10px;
-}
-
 p {
     text-indent: 10px;
 }
@@ -48,6 +43,10 @@ n'a pas besoin de laisser de marge en-dessous car c'est la fin du fieldset*/
 
 /*==============================NousRejoindre==============================*/
 /*Tableau*/
+#introTableau {
+    text-align: center;
+    font-weight: bold; /*en gras*/
+}
 table {
     border-width: 1px; /*Bordure d'une épasseur d'un pixel*/
     border-color: #1E90FF black; /*Couleurs des bordures. Lignes = #1E90FF (Bleu), colonnes en noir*/
@@ -65,5 +64,4 @@ thead {
 }
 
 tbody tr:nth-child(odd) {background-color: white} /*Couleur de l'arrière-plan des lignes impaires du tbody*/
-
 tbody tr:nth-child(even) {background-color: #DCDCDC} /*Couleur de l'arrière-plan des lignes paires du tbody. #DCDCDC=lightgrey*/

@@ -10,14 +10,14 @@ h1{
 
 h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 
-/*Classes des personnes*/
-.depeyre{
+/*Identifiants des personnes*/
+#depeyre{
 	background-color: #FFAD00;
 	/*Change la couleur d'arrière-plan en jaune*/
 	text-align: center;
 }
 
-.fressard{
+#fressard{
 	background-color: #F59BAD;
 	/*Change la couleur d'arrière-plan en rose*/
 	text-align: center;
@@ -25,14 +25,14 @@ h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 	/*Ne pas avoir d'images sur le coté gauche. En l'occurence, la photo des personnes.*/
 }
 
-.gavioli{
+#gavioli{
 	background-color: #3B4CCA;
 	/*Change la couleur d'arrière-plan en bleu*/
 	text-align: center;
 	clear: left;
 }
 
-.viguier{
+#viguier{
 	background-color: #FF0000;
 	/*Change la couleur d'arrière-plan en rouge*/
 	text-align: center;
@@ -44,7 +44,8 @@ h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 }
 
 p {
-    text-indent: 20px; /*Alinéa*/
+    margin-left: 10px; 
+    text-indent: 15px;/*Alinéa*/
 }
 
 footer {
