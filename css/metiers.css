@@ -10,6 +10,10 @@ h2{
     text-indent: 10px; /*Petit alinéa de 10px*/
 }
 
+h3 {
+    color: blue;
+}
+
 p {
     text-indent: 10px;
 }

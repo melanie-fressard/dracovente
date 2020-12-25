@@ -3,8 +3,8 @@
 
 
 :root{/*Cette partie sert à définir des variables qui pourrons être utilisé dans tout les css*/
-    --header-color-bg: #FAAA6D;/*La couleur de fond du header et peu-être du footer*/
-    --header-link-hover:#419EAE;/*Couleur des liens quand la sourie passe dessus*/
+    --header-color-bg: #FAAA6D;/*La couleur de fond du header et du footer*/
+    --header-link-hover: #29549C;/*Couleur des liens quand la sourie passe dessus*/
     --main-color-bg:rgba(255,255, 240, 0.9);/*Couleur de background du main*/
 }
 body{
@@ -64,8 +64,10 @@ input:focus{
     border: 2px solid black;
 
 }
+
+
 header a:-webkit-any-link {/*Change la couleur des liens du header*/
-    color: rgb(151, 14, 10);
+    color: white;
     cursor: pointer;
     text-decoration: none;
 }
@@ -79,10 +81,19 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
         flex-direction: row;/*Alignement de son contenu*/
     }
 
+    .logoAccueil {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #FAAA6D;;
+    }
 
     header nav{/*Positionne le header sans burger*/
-        position: fixed;/*On bloque le menu en haut de l'écran*/
+        position: absolute;/*On bloque le menu en haut de l'écran*/
         width: 90%;/*Largeur à remettre à 100% sur les petits écrans*/
+        top: 10%;
         left: 5%;
         right: 5%;
         height: 45px;
@@ -101,6 +112,7 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
 
     header nav > div:hover{/*Augmente la taille de l'élement sur lequel la souris passe*/
         flex-grow: 3;
+        background-color: #E19962;
         transition:600ms;/*Permet d'éviter que l'animation soit instantanée*/
     }
 
@@ -114,6 +126,7 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
         display: none;
         margin: 0px 0px 0px 0px;
         background-color: var(--header-color-bg);
+        background-color: #E19962;
         border-top: none;
         border-radius: 15px;
         border-top-left-radius: 0px;
@@ -152,7 +165,7 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
 
     }
 
-    nav{
+    .logoAccueil{
         display: none;
     }
 
@@ -205,6 +218,7 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
         font-weight: bolder;
         color: var(--header-link-hover);
     }
+
  }
 
 
