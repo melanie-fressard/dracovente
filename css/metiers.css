@@ -69,3 +69,7 @@ thead {
 
 tbody tr:nth-child(odd) {background-color: white} /*Couleur de l'arrière-plan des lignes impaires du tbody*/
 tbody tr:nth-child(even) {background-color: #DCDCDC} /*Couleur de l'arrière-plan des lignes paires du tbody. #DCDCDC=lightgrey*/
+
+table, table td, table th{
+    border: 1px solid black;
+}
