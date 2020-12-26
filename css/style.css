@@ -13,8 +13,9 @@
     src: url(../font/FredokaOne.ttf);
 }
 
+/* Police d'écriture de base */
 *{
-    font-family: fredoka;
+    font-family: fredoka, Arial;
 }
 
 body{
