@@ -40,7 +40,7 @@ span#slogan {
     border: #3A3F43 double thick;
     border-radius: 30px;
     padding: 10px;
-    font-family: pokemon;
+    font-family: pokemon, Arial;
     color: #53585a;
 }
 
