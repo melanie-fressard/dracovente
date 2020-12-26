@@ -33,7 +33,7 @@ main{/*Le main contient toutes les informations spécifiques à chaques pages*/
 }
 
 a#ancre>img {/*Configure la taille de l'ancre*/
-    width : 50px;
+    width : 70px;
     height: auto;
 }
 
