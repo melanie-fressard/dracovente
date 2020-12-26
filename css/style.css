@@ -7,6 +7,16 @@
     --header-link-hover: #29549C;/*Couleur des liens quand la sourie passe dessus*/
     --main-color-bg:rgba(255,255, 240, 0.9);/*Couleur de background du main*/
 }
+
+@font-face {
+    font-family: "fredoka";
+    src: url(../font/FredokaOne.ttf);
+}
+
+*{
+    font-family: fredoka;
+}
+
 body{
     background-image: url("../images/fond2.jpg");/*Met le dragon en fond*/
     background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
