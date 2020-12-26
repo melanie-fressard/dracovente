@@ -64,6 +64,9 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
     text-decoration: none;
 }
 
+.strong{/*Pour quand une balise est entierement en gras pour ne pas avoir a rajouter de balise <strong>*/
+    font-weight: bold;
+}
 
 
 @media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
