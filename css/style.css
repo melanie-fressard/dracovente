@@ -44,26 +44,18 @@ a#ancre>img {/*Configure la taille de l'ancre*/
     margin: 10px 10px 10px 10px;
 }
 
-/*change l'apparence des inputs */
-input{
-    border-radius: 7px;
-    border: none;
-    outline: none;
-}
-select{
+/*change l'apparence des input */
+input, select{
     border-radius: 7px;
     border: none;
     outline: none;
 }
 
-select:focus{
+
+select:focus, input:focus{/*Remise en place du outline en utilisant la bordure pour controler l'apparence*/
     border: 2px solid black;
 }
 
-input:focus{
-    border: 2px solid black;
-
-}
 
 
 header a:-webkit-any-link {/*Change la couleur des liens du header*/
@@ -72,6 +64,9 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
     text-decoration: none;
 }
 
+.strong{/*Pour quand une balise est entierement en gras pour ne pas avoir a rajouter de balise <strong>*/
+    font-weight: bold;
+}
 
 
 @media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
