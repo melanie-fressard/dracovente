@@ -24,9 +24,7 @@
 main {
     width: 80%;
     background-color: rgba(255,255, 240, 0.9);
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin: 60px auto 20px auto;
     text-align: center;
     border: solid black 1px;
 }
@@ -40,6 +38,7 @@ blockquote {
 /* Le slogan de notre entreprise : Pokémon, achetez-les tous ! + rajout de la police d'écriture sur le slogan */
 span#slogan {
     border: #3A3F43 double thick;
+    border-radius: 30px;
     padding: 10px;
     font-family: pokemon;
     color: #53585a;
@@ -105,12 +104,12 @@ div#entreprise_block div#contenue_entreprise p a {
 
 /* Modifie la seconde image */
 #draco_o {
-    padding-top: 25.39px;
+    padding-top: 25px;
 }
 
 /* Modifie la troisème image */
 #draco_y {
-    padding-top: 19.91px;
+    padding-top: 20px;
 }
 
 /* Modifie la dernière image */
@@ -242,10 +241,7 @@ div#usedraco {
 /* Texte au dessus des deux images */
 p.txt_usedraco {
     color: white;
-    margin-left: 20px ;
-    margin-right: 20px ;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 20px 40px 20px;
 }
 
 /* Emplacement du bouton "commander" */
