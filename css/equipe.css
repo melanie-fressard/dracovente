@@ -45,7 +45,18 @@ h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 
 p {
     margin-left: 10px; 
-    text-indent: 15px;/*Alinéa*/
+    text-indent: 15px; /*Alinéa*/
+    text-align: justify;
+}
+/*La note concernant Enzo se psitionne sous la photo*/
+.note {
+	margin-left: 10px; 
+    text-align: justify;
+	clear: left;
+}
+/*Souligner note*/
+.underline {
+	text-decoration: underline;
 }
 
 footer {
