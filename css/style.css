@@ -231,6 +231,7 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
  @media (max-width: 480px){/*Pour les très petits ecrants, on supprime l'image de fond afin d'avoir la meilleur visibilite posible*/
     body{
         background-image: none;
+        background-color: var(--main-color-bg);
     }
 
     main{

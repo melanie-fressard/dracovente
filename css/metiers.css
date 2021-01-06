@@ -77,11 +77,14 @@ ul.tresPetit{
     display: none;/*Tant que l'ecran est suffisement grand pour le tableau, la liste n'est pas*/
 }
 
-@media (max-width: 500px){/*Pour les petits ecrans*/
+@media (max-width: 480px){/*Pour les petits ecrans*/
     table{
         display: none;/*Ce tableau ne peut pas etre reduit a l'infini, on le remplace par une simple liste*/
     }
+    h1{
+        font-size: 130%;/*Evite que le titre dépasse de son cadre*/
+    }
     ul.tresPetit{
-        display: block;
+        display: block;/*Apparition de la liste des métiers*/
     }
 }
