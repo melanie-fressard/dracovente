@@ -6,14 +6,7 @@ article{
     flex-direction: column;
     width: 70%;
 }
-/*
-section{
-    Le flex n'est pas utile
-    display: flex;
-    flex-direction: column;
-    
-}
-*/
+
 
 aside{
     background-color: var(--main-color-bg);
@@ -39,12 +32,14 @@ section{
 img.logo{
     width: 40px;
 }
+
+
 @media (min-width:999px){/*Quand le graphique est en petit, passer la souris dessus l'agrandi*/
     img.graph:hover{
         position: fixed;
-        left: 15%;
+        left: 25%;
         top: 15%;
-        transition:1500ms;
+        width: 70%;
     }
 }
 
