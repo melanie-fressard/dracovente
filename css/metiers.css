@@ -57,7 +57,6 @@ table {
     border-collapse:collapse; /*Fusionne bordures avec cellules*/
     text-align: center;
     width: 100%; /*Le tableau prend toute la place sur la page*/
-    
 }
 
 tr {margin : auto}
@@ -72,4 +71,17 @@ tbody tr:nth-child(even) {background-color: #DCDCDC} /*Couleur de l'arrière-pla
 
 table, table td, table th{
     border: 1px solid black;
+}
+
+ul.tresPetit{
+    display: none;/*Tant que l'ecran est suffisement grand pour le tableau, la liste n'est pas*/
+}
+
+@media (max-width: 500px){/*Pour les petits ecrans*/
+    table{
+        display: none;/*Ce tableau ne peut pas etre reduit a l'infini, on le remplace par une simple liste*/
+    }
+    ul.tresPetit{
+        display: block;
+    }
 }
