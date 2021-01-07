@@ -1,8 +1,4 @@
-h1{
-	background-color: #3D7DCA; /*Change la couleur d'arrière-plan du texte*/
-	color: #FFCB05; /*Change la couleur du texte*/
-    text-align: center; /*Mets le texte au centre*/
-}
+ /*Tout ce qui est propre à la page faq*/
 
 /*Centrer les puces*/
 #un, #deux, #trois, #quatre, #cinq, #six, #sept, #huit, #neuf, #dix, #onze {text-align: center;}
