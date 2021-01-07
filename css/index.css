@@ -1,7 +1,8 @@
 /*Tout ce qui est propre à la page Index*/
-#slogan{
+#devise{
 	text-align: center;
 	font-family: fredoka, Arial Black;
+	color: #E19962;
 }
 
 @media (max-width:800px){

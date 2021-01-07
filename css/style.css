@@ -156,7 +156,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
 
 
 
-    header .submenu{/*Donne les caractéristiques des elements du menu déroulant des métiers*/
+    header .submenu{/*Donne les caractéristiques des éléments du menu déroulant des métiers*/
         display: none;
         margin: 0px 0px 0px 0px;
         background-color: var(--header-color-bg);
@@ -167,7 +167,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         border-top-right-radius: 0px;
     }
 
-    header nav>div:hover .submenu{/*Quand la souris passe dessus on ouvre les submenus*/
+    header nav>div:hover .submenu{/*Quand la souris passe dessus, on ouvre les sous-menus*/
         display: block;
     }
 
@@ -176,7 +176,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         color: var(--header-link-hover);
     }
 
-    header nav>div.conteneur:hover {/*Rétabli les angles de "nous rejoindre" afin de ne pas avoir d'espace avec ses sous-menus*/
+    header nav>div.conteneur:hover {/*Rétabli les angles de "Nous Rejoindre" afin de ne pas avoir d'espace avec ses sous-menus*/
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
