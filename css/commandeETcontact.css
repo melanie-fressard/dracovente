@@ -43,3 +43,7 @@ fieldset{ /*met le fond en gris et arrondi les coins*/
     -webkit-border-radius:8px;	
     border-radius:8px;	
 }
+
+main {
+    display: flex;
+}

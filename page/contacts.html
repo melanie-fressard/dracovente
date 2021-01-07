@@ -61,6 +61,7 @@
         <main>
             <div class="contact">
                 <form action="machin.php" method="get">
+                    <main>
                     <fieldset>
                         <legend>Informations personnelles</legend>
                             <!--info perso-->
@@ -104,8 +105,24 @@
                                     </select></div>
                                 </p>
                     </fieldset>
-            
-                        <!--partie question-->
+                            
+                                <label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
+                                    <input id="date" name="date" type="date" required="">
+                                
+                        
+                                <!--le message-->
+
+                                <label>Votre message* :</label>
+                                    <textarea name="message" placeholder="Ecrivez votre message ici !" required=""></textarea>
+
+                            
+
+                                <label for="lu">J’ai bien lu les <a href="./mentionsLegales.html">mentions légales</a> que je n’ai pas lues*</label>
+                                <input id="lu" name="lu"  onChange="echange(); " type="checkbox" required="">
+</main>
+
+                                <!--partie question-->
+                                <aside>
                             <p>
                                 <div class="question"><label>Comment avez-vous entendu parler de notre société ?</label>
 
@@ -121,25 +138,11 @@
                                 <input id="2" class="off" name="where" type="text"></div>
                                 </div>
                             </p> 
-                            <p>
-                                <div><label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
-                                    <input id="date" name="date" type="date" required="">
-                                </div>
-                            </p>
-                                <!--le message-->
-
-                                <div><p><label>Votre message* :</label></p>
-                                    <textarea name="message" placeholder="Ecrivez votre message ici !" required=""></textarea>
-
-                                </div>
-
-                                <label for="lu">J’ai bien lu les <a href="./mentionsLegales.html">mentions légales</a> que je n’ai pas lues*</label>
-                                <input id="lu" name="lu"  onChange="echange(); " type="checkbox" required="">
 
                                 <!--par defaut le envoyer disabled est affiché, lorsque la case est cochée, le bouton envoyer est accessible-->
                                 <input id="1" class="off" value="Envoyer" type="submit">
                                 <input id="3" class="on" value="Envoyer" type="submit" disabled>
-
+</aside>
                                 <div>* Champs obligatoires</div>
                 </form>
             </div>
