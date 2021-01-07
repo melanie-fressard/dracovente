@@ -1,13 +1,4 @@
  /*Tout ce qui est propre à la page equipe*/
-h1{
-	background-color: #3D7DCA;
-	/*Change la couleur d'arrière-plan en bleu*/
-	color: #FFCB05;
-	/*Change la couleur du texte en jaune*/
-    text-align: center;
-    /*Mets le texte au centre*/
-}
-
 h2{text-indent: 10px;} /*léger espaçage pour éviter de coller le bord*/
 
 /*Identifiants des personnes*/

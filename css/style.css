@@ -1,61 +1,73 @@
-
 /*Ce fichier css s'applique à toutes les pages, il contient notament le style du header et du footer*/
 
 
-:root{/*Cette partie sert à définir des variables qui pourrons être utilisé dans tout les css*/
-    --header-color-bg: #FAAA6D;/*La couleur de fond du header et du footer*/
-    --header-link-hover: #29549C;/*Couleur des liens quand la sourie passe dessus*/
-    --main-color-bg:rgba(255,255, 240, 0.9);/*Couleur de background du main*/
+:root{      /*Cette partie sert à définir des variables qui pourrons être utilisé dans tout les css*/
+    --header-color-bg: #FAAA6D;                     /*La couleur de fond du header et du footer*/
+    --header-link-hover: #29549C;                   /*Couleur des liens quand la sourie passe dessus*/
+    --main-color-bg:rgba(255,255, 240, 0.9);        /*Couleur de background du main*/
 }
 
+/*Importation de la police d'écriture*/
 @font-face {
     font-family: "fredoka";
     src: url(../font/FredokaOne.ttf);
 }
 
-/* Police d'écriture de base */
-*{
+/* Polices d'écriture de base */
+header, h1{
     font-family: fredoka, Arial;
 }
 
-body{
-    background-image: url("../images/fond2.jpg");/*Met le dragon en fond*/
-    background-attachment: fixed;/*Empèche le fond de défiler avec le texte*/
-    background-repeat: no-repeat;/*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
-    background-color: black;/*Quand l'image ne peux pas prendre toute la page, met un fond noir à la place*/
+
+
+
+body {
+    background-image: url("../images/fond2.jpg");       /*Met le dragon en fond*/
+    background-attachment: fixed;       /*Empèche le fond de défiler avec le texte*/
+    background-repeat: no-repeat;       /*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
+    background-color: black;     /*Quand l'image ne peux pas prendre toute la page, met un fond noir à la place*/
 }
 
-textarea{/*Fait en sorte que les zones de textes s'affiche toujours avec une taille minimum*/
+textarea {       /*Fait en sorte que les zones de textes s'affiche toujours avec une taille minimum*/
     width: 80%;
     min-height: 100px;
 }
 
-main{/*Le main contient toutes les informations spécifiques à chaques pages*/
+main {/*Le main contient toutes les informations spécifiques à chaques pages*/
     margin: 50px 4% 40px 4%;
     background-color: var(--main-color-bg);/*On va chercher le contenu de la variable*/
     font-size: 20px;
     padding: 30px 30px 30px 30px;
 }
 
-#ancre{/*Place notre ancre qui permet de remonter en haut des page*/
+h1 {
+    background-color: #3D7DCA;
+    /*Change la couleur d'arrière-plan en bleu*/
+    color: white;
+    /*Change la couleur du texte en jaune*/
+    text-align: center;
+    /*Mets le texte au centre*/
+}
+
+#ancre {        /*Place notre ancre qui permet de remonter en haut des page*/
     position : fixed;
     top : 87%;
     left: 90%;
 }
 
-a#ancre>img {/*Configure la taille de l'ancre*/
+a#ancre>img {       /*Configure la taille de l'ancre*/
     width : 70px;
     height: auto;
 }
 
-/* Donne une dimension et un placement aux logos des réseaux sociaux */
+/*Donne une dimension et un placement aux logos des réseaux sociaux*/
 .social_icon {
     width: 2.5%;
     height: 2%;
     margin: 10px 10px 10px 10px;
 }
 
-/*change l'apparence des input */
+/*Change l'apparence des input */
 input, select{
     border-radius: 7px;
     border: none;
@@ -63,42 +75,38 @@ input, select{
 }
 
 
-select:focus, input:focus{/*Remise en place du outline en utilisant la bordure pour controler l'apparence*/
+select:focus, input:focus{      /*Remise en place du outline en utilisant la bordure pour controler l'apparence*/
     border: 2px solid black;
 }
 
 
 
-header a:-webkit-any-link {/*Change la couleur des liens du header*/
+header a:-webkit-any-link {     /*Change la couleur des liens du header*/
     color: white;
     cursor: pointer;
     text-decoration: none;
 }
 
-.strong{/*Pour quand une balise est entierement en gras pour ne pas avoir a rajouter de balise <strong>*/
+.strong{        /*Pour quand une balise est entierement en gras pour ne pas avoir a rajouter de balise <strong>*/
     font-weight: bold;
 }
 
 
-@media (min-width:999px){/*Si la largeur de l'écran est suppérieur à 999px*/
+@media (min-width:999px){   /*Si la largeur de l'écran est suppérieur à 999px*/
 
-    header{/*Organisation du header sans burger*/
-        display: flex;
-        flex-direction: row;/*Alignement de son contenu*/
+    header {                 /*Header sans burger*/
+        display: flex;      /*Utilisation du flex dans le header*/
     }
 
     .logoAccueil {
-    display: flex;
     position: fixed;
     width: 100%;
-    flex-direction: row;
-    align-items: stretch;
-    background-color: #FAAA6D;;
+    background-color: #FAAA6D;
     }
 
-    header nav{/*Positionne le header sans burger*/
-        position: absolute;/*On bloque le menu en haut de l'écran*/
-        width: 90%;/*Largeur à remettre à 100% sur les petits écrans*/
+    header nav {     /*Positionne le header sans burger*/
+        position: absolute;     /*On bloque le menu en haut de l'écran*/
+        width: 90%;     /*Largeur à remettre à 100% sur les petits écrans*/
         top: 10%;
         left: 5%;
         right: 5%;
@@ -108,7 +116,7 @@ header a:-webkit-any-link {/*Change la couleur des liens du header*/
         align-items: stretch;
     }
 
-    header nav > div{/*D'occupe de l'apparence du header sans burger*/
+    header nav > div {       /*S'occupe de l'apparence du header sans burger*/
         background-color: var(--header-color-bg);
         text-align: center;
         border-radius: 15px;

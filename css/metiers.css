@@ -1,10 +1,4 @@
 /*Tout ce qui est propre à Nous Rejoindre et les trois métiers*/
-h1{
-	background-color: #3D7DCA; /*Change la couleur d'arrière-plan du texte*/
-	color: #FFCB05; /*Change la couleur du texte*/
-    text-align: center; /*Mets le texte au centre*/
-}
-
 h2{
     background-color: #FFAD00;
     text-indent: 10px; /*Petit alinéa de 10px*/
