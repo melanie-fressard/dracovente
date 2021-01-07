@@ -7,7 +7,16 @@
     --main-color-bg:rgba(255,255, 240, 0.9);        /*Couleur de background du main*/
 }
 
-/*Importation de la police d'écriture*/
+/* Importation de la police d'écriture Questa */
+@font-face {
+    font-family: 'questa';
+    src: url('2-Questa_Regular-webfont.woff2') format('woff2'),
+    url('2-Questa_Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Importation de la police d'écriture Fredoka */
 @font-face {
     font-family: "fredoka";
     src: url(../font/FredokaOne.ttf);
@@ -15,7 +24,7 @@
 
 /* Polices d'écriture de base */
 header, h1{
-    font-family: fredoka, Arial;
+    font-family: questa, fredoka, Arial;
 }
 
 
