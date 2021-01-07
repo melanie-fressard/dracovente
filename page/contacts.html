@@ -78,10 +78,6 @@
                                     <input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required="">
                                 </div> <!--doit respecter la forme pour accepter l'input-->
 
-                                <div><label for="code">Code Postal :</label>
-                                    <input id="code" name="postal" type="text" placeholder="ex 87400" pattern="^(?:[0-8]\d|9[0-8])\d{3}$">
-                                </div><!--pattern accepte que les codes postaux francais-->
-
                                 <div><label for="country-select">Lieu de résidence :</label></div>
                             
                                 <div><select name="country" id="country-select">
@@ -102,17 +98,21 @@
                                     <option value="tv">Tuvalu</option>
                                     <option value="us">USA</option>
                                     </select></div>
+
+                                    <div><label for="code">Code Postal :</label>
+                                        <input id="code" name="postal" type="text" placeholder="ex 87400" pattern="^(?:[0-8]\d|9[0-8])\d{3}$">
+                                    </div><!--pattern accepte que les codes postaux francais-->
                                 </p>
                     </fieldset>
                     <aside>
                         <div class="message">
-                        <div id="haut">
+                        <div>
                                 <label for="date">Date à laquelle vous souhaitez être recontacté* : </label>
                                     <input id="date" name="date" type="date" required="">
                                 </div>
                         
                                 <!--le message-->
-                                <div id="bas">
+                                <div>
                                 <label>Votre message* :</label>
                                     <textarea name="message" placeholder="Ecrivez votre message ici !" required=""></textarea>
                                 </div>
@@ -141,9 +141,9 @@
 
 
                                 <!--par defaut le envoyer disabled est affiché, lorsque la case est cochée, le bouton envoyer est accessible-->
-                                <input id="1" class="off" value="Envoyer" type="submit">
+                                <p><input id="1" class="off" value="Envoyer" type="submit">
                                 <input id="3" class="on" value="Envoyer" type="submit" disabled>
-
+                                </p>
                                 <div>* Champs obligatoires</div>
                 </form>
             </div>
