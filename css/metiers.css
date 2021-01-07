@@ -12,33 +12,6 @@ p {
     text-indent: 10px;
 }
 
-div {
-    text-indent: 20px;
-}
-
-nav div{/*Empèche le header de se décaler aussi*/
-    text-indent: 0px;
-}
-
-/*Mise en page du texte en latin pour le distinguer visuellement du reste*/
-.latin p{
-    text-indent: 35px;
-    margin-left: 30px;
-    font-style: italic;
-}
-
-/*Espacement des différents labels/inputs*/
-fieldset div {
-    margin-bottom: 20px;
-}
-
-/*classe droite s'aligne avec la bordure de droite et
-n'a pas besoin de laisser de marge en-dessous car c'est la fin du fieldset*/
-.droite {
-    text-align: right;
-    margin-bottom: 0px;
-}
-
 /*==============================NousRejoindre==============================*/
 /*Tableau*/
 #introTableau {
@@ -71,6 +44,7 @@ ul.tresPetit{
     display: none;/*Tant que l'ecran est suffisement grand pour le tableau, la liste n'est pas*/
 }
 
+/*Tableau en "Responsive design"*/
 @media (max-width: 480px){/*Pour les petits ecrans*/
     table{
         display: none;/*Ce tableau ne peut pas etre reduit a l'infini, on le remplace par une simple liste*/
@@ -81,4 +55,31 @@ ul.tresPetit{
     ul.tresPetit{
         display: block;/*Apparition de la liste des métiers*/
     }
+}
+
+/*===========================Métier I, II et III===========================*/
+/*Espacement des différents labels/inputs*/
+fieldset div {
+    margin-bottom: 20px;
+}
+
+/*classe droite s'aligne avec la bordure de droite et
+n'a pas besoin de laisser de marge en-dessous car c'est la fin du fieldset*/
+.droite {
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+/*================================Métier I=================================*/
+/*Mise en page des textes en latin pour le distinguer visuellement du reste*/
+.latin {
+    text-indent: 35px;
+    margin-left: 30px;
+    font-style: italic;
+}
+
+/*===============================Métier III================================*/
+/*Mettre une phrase en rouge*/
+#rouge {
+    color: #8B0000;
 }

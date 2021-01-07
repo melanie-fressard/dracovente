@@ -36,7 +36,7 @@ main .contact {
     width: 17px;
 }
 
-fieldset{ /*met le fond en gris et arrondi les coins*/
+fieldset{ /*Met le fond en gris et arrondit les coins*/
     background-color: #4b4f5377 ;
     border:2px solid ;
     -moz-border-radius:8px;

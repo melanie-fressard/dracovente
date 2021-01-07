@@ -14,6 +14,13 @@
     }
 }
 
+@media (max-width: 480px) {
+    #slogan{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 /* Ajout d'une police d'écriture qu'on nommera pokemon */
 @font-face {
     font-family: "pokemon";
@@ -36,12 +43,12 @@ blockquote {
 }
 
 /* Le slogan de notre entreprise : Pokémon, achetez-les tous ! + rajout de la police d'écriture sur le slogan */
-span#slogan {
+p#slogan{
     border: #3A3F43 double thick;
     border-radius: 30px;
-    padding: 10px;
-    font-family: pokemon, Arial;
-    color: #53585a;
+    font-family: pokemon, fredoka, Arial;
+    background-color: #3D7DCA;
+    color: white;
 }
 
 /* Donne un fond gris/noir au bloc */

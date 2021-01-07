@@ -22,13 +22,10 @@
     src: url(../font/FredokaOne.ttf);
 }
 
-/* Polices d'écriture de base */
-header, h1{
-    font-family: questa, fredoka, Arial;
+/* Polices d'écriture de base (Cette police d'écriture n'est pas conservée pour le header et les titres de type h1*/
+*{
+    font-family: questa, Arial;
 }
-
-
-
 
 body {
     background-image: url("../images/fond2.jpg");       /*Met le dragon en fond*/
@@ -50,6 +47,8 @@ main {/*Le main contient toutes les informations spécifiques à chaques pages*/
 }
 
 h1 {
+    font-family: fredoka, Arial Black;
+    /*Change la police d'écriture*/
     background-color: #3D7DCA;
     /*Change la couleur d'arrière-plan en bleu*/
     color: white;
@@ -61,7 +60,7 @@ h1 {
 #ancre {        /*Place notre ancre qui permet de remonter en haut des page*/
     position : fixed;
     top : 87%;
-    left: 91%;
+    left: 94%;
 }
 
 a#ancre>img {       /*Configure la taille de l'ancre*/
@@ -102,6 +101,7 @@ select:focus, input:focus{      /*Remise en place du outline en utilisant la bor
 
 
 header a:-webkit-any-link {     /*Change la couleur des liens du header*/
+    font-family: fredoka, Arial Black; /*Change la police d'écriture*/
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -118,7 +118,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         display: flex;      /*Utilisation du flex dans le header*/
     }
 
-    .logoAccueil {
+    .menuSansBurger {
     position: fixed;
     width: 100%;
     background-color: #FAAA6D;
@@ -199,7 +199,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
 
     }
 
-    .logoAccueil{
+    .menuSansBurger{
         display: none;
     }
 
@@ -212,7 +212,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
     header div.burger{
         width: 800px;
         position: fixed;
-        left :85%;
+        left : 85%;
         top : 2%;
         z-index: 2;
     }
@@ -220,7 +220,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         background-color: #FAAA6D;
         padding: 5px 5px 5px 5px;
         margin-left: -50px;
-        left :70%;
+        left : 60%;
         font-size: 20px;
     }
     header div.burger img{
@@ -248,7 +248,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
     header>div.burger:hover nav#menu2 a{
         border-top: none;
     }
-    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souri */
+    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souris */
         font-weight: bolder;
         color: var(--header-link-hover);
     }
@@ -256,7 +256,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
  }
 
 
- @media (max-width: 480px){/*Pour les très petits ecrants, on supprime l'image de fond afin d'avoir la meilleur visibilite posible*/
+ @media (max-width: 480px){/*Pour les très petits ecrants, on supprime l'image de fond afin d'avoir la meilleure visibilité posible*/
     body{
         background-image: none;
         background-color: var(--main-color-bg);
@@ -269,21 +269,21 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
 
  /*************FOOTER**************************/
  
-footer{visibility: hidden;}/*Suppression du footer sur les petits ecrants pour l'estétique*/
+footer{visibility: hidden;}/*Suppression du footer sur les petits écrans pour l'esthétique*/
 
 footer.absolu{/*Permet un bon affichage des pages trop vides*/
         position: absolute;
         bottom: 10px;
 }
  
-@media screen and (min-width:768px){/*Caracteristiques du footer sur les pages classiques */
+@media screen and (min-width:768px){/*Caractéristiques du footer sur les pages classiques */
     footer{
         background-color: var(--header-color-bg);
         width:100%;
         text-align: center;
         visibility: visible;
     }
-    body footer a.aFooter{/*On specifie les caracteristiques des balise a du footer pour qu'elles ne soient pas modifie*/
+    body footer a.aFooter{/*On specifie les caractéristiques des balises a du footer pour qu'elles ne soient pas modifiées*/
         font-size: 16px;
         margin: 0px 30px;
         color:black;
@@ -293,4 +293,3 @@ footer.absolu{/*Permet un bon affichage des pages trop vides*/
         margin: 0px 30px;
     }
 }
-    

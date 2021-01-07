@@ -1,3 +1,9 @@
+/*Tout ce qui est propre à la page Index*/
+#slogan{
+	text-align: center;
+	font-family: fredoka, Arial Black;
+}
+
 @media (max-width:800px){
 	div>img{
 		width: 100%;/*Met l'image du transporteur a la bonne taille*/

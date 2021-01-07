@@ -45,11 +45,7 @@ p {
     text-align: justify;
 	clear: left;
 }
-/*Souligner note*/
+/*Pour souligner*/
 .underline {
 	text-decoration: underline;
-}
-
-footer {
-	clear: left;
 }

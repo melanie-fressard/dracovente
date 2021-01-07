@@ -34,7 +34,7 @@ img.logo{
 }
 
 
-@media (min-width:999px){/*Quand le graphique est en petit, passer la souris dessus l'agrandi*/
+@media (min-width:999px){/*Quand le graphique est en petit, passer la souris dessus l'agrandit*/
     img.graph:hover{
         position: fixed;
         left: 25%;
