@@ -86,7 +86,7 @@ a#ancre>img {       /*Configure la taille de l'ancre*/
     margin: 10px 10px 10px 10px;
 }
 
-/*Change l'apparence des input */
+/*Change l'apparence des inputs */
 input, select{
     border-radius: 7px;
     border: none;
@@ -216,6 +216,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         top : 2%;
         z-index: 2;
     }
+
     header div.burger:hover{
         background-color: #FAAA6D;
         padding: 5px 5px 5px 5px;
@@ -223,18 +224,14 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         left : 60%;
         font-size: 20px;
     }
+
     header div.burger img{
         width: 50px;
         height: 50px;
     }
 
-    /*div.burger>img{
-        width: 100px;
-    }*/
-
     header div.burger>nav#menu2{
         display: none;
-        /*visibility: hidden; Pas de visibility sinon la souris passant dessus le révele sans avoir touché le burger*/
         width: 800px;
         position: relative;
         font-size: 25px;
@@ -243,12 +240,13 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
     header>div.burger:hover nav#menu2{
         margin-left: 0px;
         display: block;
-        /*visibility: visible;*/
     }
+
     header>div.burger:hover nav#menu2 a{
         border-top: none;
     }
-    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souris */
+
+    header>div.burger:hover nav#menu2 a:hover{/*Permet de colorer les liens du burger sur lesquels la souris passe*/
         font-weight: bolder;
         color: var(--header-link-hover);
     }
