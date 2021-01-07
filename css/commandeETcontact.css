@@ -53,9 +53,9 @@ fieldset{ /*met le fond en gris et arrondi les coins*/
 display: flex;
 flex-direction: column;
 }
-#haut{
-    align-self: flex-start;
-}
-#bas {
-}
 
+@media (max-width:999px){
+.contact aside {
+    display: block;
+    }
+}
