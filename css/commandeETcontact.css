@@ -44,6 +44,18 @@ fieldset{ /*met le fond en gris et arrondi les coins*/
     border-radius:8px;	
 }
 
-main {
+.contact aside {
     display: flex;
+    justify-content: space-between;
 }
+
+.message{
+display: flex;
+flex-direction: column;
+}
+#haut{
+    align-self: flex-start;
+}
+#bas {
+}
+
