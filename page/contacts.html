@@ -61,13 +61,13 @@
 
 		<main>
 			<h1>NOUS ENVOYER UN MESSAGE</h1>
-			<div class="contact">
+			<div id="contact">
 				<form action="machin.php" method="get">
 					<fieldset>
 						<legend>Informations personnelles</legend>
 						<!--info perso-->
-						<p>
-							
+						<div class="gauche">
+							Veuillez completer les informations suivantes :
 							<div><label for="surname">Nom* :</label>
 								<input id="surname" name="uname" type="text" required="">
 							</div>
@@ -79,7 +79,6 @@
 							<div><label for="mail">Email* :</label>
 								<input id="mail" name="mail" type="email" placeholder="yourmail@domain.com" required="">
 							</div> <!--doit respecter la forme pour accepter l'input-->
-
 							<div><label for="country-select">Lieu de résidence :</label></div>
 							
 							<div><select name="country" id="country-select">
@@ -104,7 +103,10 @@
 							<div><label for="code">Code Postal :</label>
 								<input id="code" name="postal" type="text" placeholder="ex 87400" pattern="^(?:[0-8]\d|9[0-8])\d{3}$">
 							</div><!--pattern accepte que les codes postaux francais-->
-						</p>
+						</div>
+						<div id="prof">
+							<img src="https://pm1.narvii.com/7312/9e7f1c3f6387038c7e8c2e617b03d03eb71095a8r1-549-413v2_uhq.jpg" alt="profchen">
+						</div>
 					</fieldset>
 					<aside>
 						<div class="message">
@@ -122,17 +124,18 @@
 						<!--partie question-->
 					
 						<p>
-							<div class="question"><label>Comment avez-vous entendu parler de notre société ?</label>
-
-								<div class="question"> <input id="web" name="where" type="checkbox">Notre site Web</div>
-								<div class="question"><input id="resc" name="where" type="checkbox">Un moteur de recherche</div>
-								<div class="question"> <input id="reco" name="where" type="checkbox">Une recommandation</div>
-								<div class="question"><input id="emp" name="where" type="checkbox">Par l’un de nos employés</div>
-								<div class="question"><input id="med" name="where" type="checkbox">Par les médias</div>
-								<div class="question"><input id="check" name="where" onChange="verif();" type="checkbox">Autre  
-
-								<!--si la case n'est pas cochée, la case de texte n'apparait pas-->
-
+							
+							<div class="question">
+								<div>
+									<label>Comment avez-vous entendu parler de notre société ?</label>
+								</div>
+								<div><input id="web" name="where" type="checkbox">Notre site Web</div>
+								<div><input id="resc" name="where" type="checkbox">Un moteur de recherche</div>
+								<div><input id="reco" name="where" type="checkbox">Une recommandation</div>
+								<div><input id="emp" name="where" type="checkbox">Par l’un de nos employés</div>
+								<div><input id="med" name="where" type="checkbox">Par les médias</div>
+								<div><input id="check" name="where" onChange="verif();" type="checkbox">Autre  
+									<!--si la case n'est pas cochée, la case de texte n'apparait pas-->
 								<input id="2" class="off" name="where" type="text"></div>
 							</div>
 						</p> 
@@ -160,8 +163,10 @@
                 <a href="https://www.instagram.com/pokemon.fra/" target="_blank"><img class="social_icon" src="../images/icon_instagram.png" alt="logo Instagram"></a>
                 <a href="https://github.com/gatiendep/ProjetSiteWeb" target="_blank"><img class="social_icon" src="../images/icon_github.png" alt="logo GitHub"></a>
             </div>
-            <span>© 666-2020</span>
-            <a href="./mentionsLegales.html" class="aFooter">Mentions légales</a>
+            <span>
+				Dracovente © 666-2020
+			<a href="./mentionsLegales.html" class="aFooter">Mentions légales</a>
+		</span>
         </footer>
     </body>
 </html>

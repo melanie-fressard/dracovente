@@ -81,7 +81,7 @@ a#ancre>img {       /*Configure la taille de l'ancre*/
 
 /*Donne une dimension et un placement aux logos des réseaux sociaux*/
 .social_icon {
-    width: 2.5%;
+    width: 2%;
     height: 2%;
     margin: 10px 10px 10px 10px;
 }
@@ -201,7 +201,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
     
     
     main{
-        background-color: rgba(255,255, 240, 0.95);
+        background-color: rgba(255, 255, 240, 0.76);
 
     }
 
@@ -288,12 +288,12 @@ footer.absolu{/*Permet un bon affichage des pages trop vides*/
         visibility: visible;
     }
     body footer a.aFooter{/*On specifie les caractéristiques des balises a du footer pour qu'elles ne soient pas modifiées*/
-        font-size: 16px;
+        font-size: 15px;
         margin: 0px 30px;
         color:black;
     }
     footer span{
-        font-size: 16px;
+        font-size: 15px;
         margin: 0px 30px;
     }
 }

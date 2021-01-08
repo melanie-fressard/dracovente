@@ -2,7 +2,7 @@ main .commande {
     text-align: center;
 }
 
-main .contact {
+main #contact {
     text-align: center;
 }
 
@@ -36,15 +36,36 @@ main .contact {
     width: 17px;
 }
 
+#contact fieldset {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 fieldset{ /*Met le fond en gris et arrondit les coins*/
     background-color: #4b4f5377 ;
     border:2px solid ;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;	
-    border-radius:8px;	
+    border-radius:8px;
 }
 
-.contact aside {
+.gauche{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#prof img {
+    width: 300px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact aside {
     display: flex;
     justify-content: space-between;
 }
@@ -55,7 +76,29 @@ flex-direction: column;
 }
 
 @media (max-width:999px){
-.contact aside {
+#contact aside {
     display: block;
     }
+#contact fieldset{
+    display :block;
+}
+#prof img{
+    display : none;
+}
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.social_icon{
+    width : 30px;
+    height: auto;
+}
+
+footer span{
+display :flex;
+flex-direction: column-reverse;
+align-self: center;
 }
