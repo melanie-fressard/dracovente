@@ -59,8 +59,8 @@ h1 {
 
 #ancre {        /*Place notre ancre qui permet de remonter en haut des page*/
     position : fixed;
-    top : 87%;
-    left: 94%;
+    top : 83%;
+    left: 90%;
 }
 
 a#ancre>img {       /*Configure la taille de l'ancre*/
@@ -183,6 +183,12 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
 
     header .burger{/*Cache le burger*/
         display: none;
+    }
+
+    #ancre {        /*Place l'ancre plus à droite sur es grand ecrans*/
+        position : fixed;
+        top : 83%;
+        left: 94%;
     }
 }
 
