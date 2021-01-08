@@ -33,6 +33,15 @@ img.logo{
     width: 40px;
 }
 
+#listePresse{/*Affichage de la liste des articles*/
+    border: 1px solid black;
+    width: 380px;
+    margin: 0px 10px 15px 0px;
+}
+
+#listePresse a{
+    color: black;
+}
 
 @media (min-width:999px){/*Quand le graphique est en petit, passer la souris dessus l'agrandit*/
     img.graph:hover{
@@ -53,5 +62,11 @@ img.logo{
     }
     main{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 480px){/*Ne sert qu'a mettre la liste des article en responsive*/
+    #listePresse{
+        width: auto;
     }
 }
