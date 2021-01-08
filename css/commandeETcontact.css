@@ -1,4 +1,4 @@
-main .commande {
+main #commande {
     text-align: center;
 }
 
@@ -36,17 +36,21 @@ main #contact {
     width: 17px;
 }
 
+fieldset{ /*Met le fond en gris et arrondit les coins*/
+    background-color: #4b4f5377 ;
+    border:2px solid ;	
+    border-radius:8px;
+}
+
+#commande{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #contact fieldset {
     display: flex;
     justify-content: space-evenly;
-}
-
-fieldset{ /*Met le fond en gris et arrondit les coins*/
-    background-color: #4b4f5377 ;
-    border:2px solid ;
-    -moz-border-radius:8px;
-    -webkit-border-radius:8px;	
-    border-radius:8px;
 }
 
 .gauche{
@@ -83,6 +87,9 @@ flex-direction: column;
     display :block;
 }
 #prof img{
+    display : none;
+}
+#commande img {
     display : none;
 }
 }
