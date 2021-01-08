@@ -273,7 +273,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
 
  /*************FOOTER**************************/
  
-footer{visibility: hidden;}/*Suppression du footer sur les petits écrans pour l'esthétique*/
+footer{display: none;}/*Suppression du footer sur les petits écrans pour l'esthétique*/
 
 footer.absolu{/*Permet un bon affichage des pages trop vides*/
         position: absolute;
@@ -285,7 +285,6 @@ footer.absolu{/*Permet un bon affichage des pages trop vides*/
         background-color: var(--header-color-bg);
         width:100%;
         text-align: center;
-        visibility: visible;
         display: flex;
         justify-content: center;
         align-content: center;
