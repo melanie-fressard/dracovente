@@ -81,8 +81,8 @@ a#ancre>img {       /*Configure la taille de l'ancre*/
 
 /*Donne une dimension et un placement aux logos des réseaux sociaux*/
 .social_icon {
-    width: 2%;
-    height: 2%;
+    width: 30px;
+    height: auto;
     margin: 10px 10px 10px 10px;
 }
 
@@ -286,6 +286,9 @@ footer.absolu{/*Permet un bon affichage des pages trop vides*/
         width:100%;
         text-align: center;
         visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
     body footer a.aFooter{/*On specifie les caractéristiques des balises a du footer pour qu'elles ne soient pas modifiées*/
         font-size: 15px;
@@ -295,5 +298,8 @@ footer.absolu{/*Permet un bon affichage des pages trop vides*/
     footer span{
         font-size: 15px;
         margin: 0px 30px;
+        display :flex;
+        flex-direction: column-reverse;
+        align-self: center;
     }
 }

@@ -86,19 +86,3 @@ flex-direction: column;
     display : none;
 }
 }
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.social_icon{
-    width : 30px;
-    height: auto;
-}
-
-footer span{
-display :flex;
-flex-direction: column-reverse;
-align-self: center;
-}
