@@ -43,7 +43,7 @@ h2 {
     text-align: justify;
 }
 
-@media (max-width: 999px;){
+@media (max-width: 999px){
 	.photoETdescription {
     	display: block;
 	}
