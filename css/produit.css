@@ -15,7 +15,13 @@
 }
 
 @media (max-width: 480px) {
-    #slogan{
+    /* Rajoute un fond noir */
+    body {
+        background-color: black;
+    }
+
+    /* donne de l'espace entre entre texte et son bloc */
+    #slogan {
         padding-left: 10px;
         padding-right: 10px;
     }
