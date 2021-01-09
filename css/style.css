@@ -216,18 +216,15 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
     }
 
     header div.burger{
-        width: 800px;
+        width: 190px;
         position: fixed;
-        left : 85%;
-        top : 2%;
-        z-index: 2;
+        top : 0%;
+        left: 0%;
     }
 
     header div.burger:hover{
         background-color: #FAAA6D;
-        padding: 5px 5px 5px 5px;
-        margin-left: -50px;
-        left : 60%;
+        /*padding: 5px 5px 5px 5px;*/
         font-size: 20px;
     }
 
@@ -244,7 +241,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
     }
 
     header>div.burger:hover nav#menu2{
-        margin-left: 0px;
+        margin-left: 5px;
         display: block;
     }
 
