@@ -7,7 +7,7 @@
     --main-color-bg:rgba(255,255, 240, 0.9);        /*Couleur de background du main*/
 }
 
-/* Importation de la police d'écriture Questa */
+/*Importation de la police d'écriture Questa*/
 @font-face {
     font-family: 'questa';
     src: url('../font/2-Questa_Regular-webfont.woff2') format('woff2'),
@@ -16,13 +16,13 @@
     font-style: normal;
 }
 
-/* Importation de la police d'écriture Fredoka */
+/*Importation de la police d'écriture Fredoka*/
 @font-face {
     font-family: "fredoka";
     src: url(../font/FredokaOne.ttf);
 }
 
-/* Polices d'écriture de base (Cette police d'écriture n'est pas conservée pour le header et les titres de type h1*/
+/*Polices d'écriture de base (Cette police d'écriture n'est pas conservée pour le header et les titres de type h1)*/
 *{
     font-family: questa, Arial;
 }
@@ -31,15 +31,15 @@ body {
     background-image: url("../images/fond2.jpg");       /*Met le dragon en fond*/
     background-attachment: fixed;       /*Empèche le fond de défiler avec le texte*/
     background-repeat: no-repeat;       /*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
-    background-color: black;     /*Quand l'image ne peux pas prendre toute la page, met un fond noir à la place*/
+    background-color: black;     /*Quand l'image ne peut pas prendre toute la page, met un fond noir à la place*/
 }
 
-textarea {       /*Fait en sorte que les zones de textes s'affiche toujours avec une taille minimum*/
+textarea {       /*Fait en sorte que les zones de textes s'affichent toujours avec une taille minimum*/
     width: 80%;
     min-height: 100px;
 }
 
-main {/*Le main contient toutes les informations spécifiques à chaques pages*/
+main {/*Le main contient toutes les informations spécifiques à chaque page*/
     margin: 50px 4% 40px 4%;
     background-color: var(--main-color-bg);/*On va chercher le contenu de la variable*/
     font-size: 20px;
@@ -54,10 +54,10 @@ h1 {
     color: white;
     /*Change la couleur du texte en jaune*/
     text-align: center;
-    /*Mets le texte au centre*/
+    /*Met le texte au centre*/
 }
 
-#ancre {        /*Place notre ancre qui permet de remonter en haut des page*/
+#ancre {        /*Place l'ancre, qui permet de remonter en haut des page*/
     position : fixed;
     top : 83%;
     left: 90%;
@@ -94,7 +94,7 @@ input, select{
 }
 
 
-select:focus, input:focus{      /*Remise en place du outline en utilisant la bordure pour controler l'apparence*/
+select:focus, input:focus{      /*Remise en place du outline en utilisant la bordure pour contrôler l'apparence*/
     border: 2px solid black;
 }
 
@@ -107,7 +107,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
     text-decoration: none;
 }
 
-.strong{        /*Pour quand une balise est entierement en gras pour ne pas avoir a rajouter de balise <strong>*/
+.strong{        /*Met en gras pour ne pas avoir à rajouter de balise <strong>*/
     font-weight: bold;
 }
 
@@ -176,7 +176,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         color: var(--header-link-hover);
     }
 
-    header nav>div.conteneur:hover {/*Rétabli les angles de "Nous Rejoindre" afin de ne pas avoir d'espace avec ses sous-menus*/
+    header nav>div.conteneur:hover {/*Rétablit les angles de "Nous Rejoindre" afin de ne pas avoir d'espace avec ses sous-menus*/
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
     }
@@ -185,7 +185,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         display: none;
     }
 
-    #ancre {        /*Place l'ancre plus à droite sur es grand ecrans*/
+    #ancre {        /*Place l'ancre plus à droite sur les grand écrans*/
         position : fixed;
         top : 83%;
         left: 94%;
@@ -224,7 +224,6 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
 
     header div.burger:hover{
         background-color: #FAAA6D;
-        /*padding: 5px 5px 5px 5px;*/
         font-size: 20px;
     }
 
@@ -285,7 +284,7 @@ footer.absolu{/*Permet un bon affichage des pages trop vides*/
         justify-content: center;
         align-content: center;
     }
-    body footer a.aFooter{/*On specifie les caractéristiques des balises a du footer pour qu'elles ne soient pas modifiées*/
+    body footer a.aFooter{/*On specifie les caractéristiques des balises <a> du footer pour qu'elles ne soient pas modifiées*/
         font-size: 15px;
         margin: 0px 30px;
         color:black;
