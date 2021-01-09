@@ -42,6 +42,10 @@ fieldset{ /*Met le fond en gris et arrondit les coins*/
     border-radius:8px;
 }
 
+textarea{
+    margin-bottom: 10px;
+}
+
 #date{
     margin-bottom: 15px;
 }
