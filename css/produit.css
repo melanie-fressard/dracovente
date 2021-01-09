@@ -14,6 +14,10 @@
         height: 40%;
     }
 
+    .invisible {
+        display: none;
+    }
+
     /* Rend le contenu avec les image dracaufeu flexive */
     #img_contenu {
         display: flex;
