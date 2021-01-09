@@ -55,6 +55,11 @@ h1 {
     /*Change la couleur du texte en jaune*/
     text-align: center;
     /*Met le texte au centre*/
+    padding: auto;
+    border: #3A3F43 double thick;
+    /*Ajoute une bordure (#3A3F43=bleu)*/
+    border-radius: 30px;
+    /*Arrondi de la bordure*/
 }
 
 #ancre {        /*Place l'ancre, qui permet de remonter en haut des page*/
@@ -141,6 +146,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         text-align: center;
         border-radius: 15px;
         flex-grow: 1;
+        left: 60%;
         margin: 5px 5px 5px 5px;
     }
 
