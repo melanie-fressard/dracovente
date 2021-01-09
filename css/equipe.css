@@ -55,13 +55,3 @@ h2 {
 
 	
 }
-
-/*La note concernant Enzo se psitionne sous la photo*/
-.note {
-	margin-left: 10px; 
-    text-align: justify;
-}
-/*Pour souligner*/
-.underline {
-	text-decoration: underline;
-}
