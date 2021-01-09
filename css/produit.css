@@ -6,6 +6,45 @@
     }
 }
 
+@media(max-width: 590px) {
+
+    /* Augmente la taille du logo */
+    #entreprise_block #logo {
+        width: 40%;
+        height: 40%;
+    }
+
+    /* Rend le contenu avec les image dracaufeu flexive */
+    #img_contenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #draco_x, #draco_o, #draco_y, #draco_g {
+        width: 80%;
+        height: 80%;
+    }
+
+    img#draco_g.img_dracaufeu {
+        width: 80%;
+        height: 80%;
+    }
+
+    /* Change la dimension des images */
+    div img.price_img, img#img_monture, img#img_livreur {
+        width: 90%;
+        height: 90%;
+        border: none;
+    }
+
+    img#egg_img {
+        width: 40%;
+        height: 40%;
+        margin-left: 20px;
+    }
+
+}
+
 /* Le contour du slogan s'enlève quand la taille de l'écran est en dessous de 507 pixels */
 @media(max-width: 507px) {
     blockquote span#slogan
@@ -63,12 +102,12 @@ p#slogan{
 }
 
 /* Met le contenu en ligne */
-#contenue_entreprise {
+#contenu_entreprise {
     display: inline;
 }
 
 /* Placement du texte + couleur du texte en blanc */
-div#entreprise_block div#contenue_entreprise p {
+div#entreprise_block div#contenu_entreprise p {
     color: white;
     padding-bottom: 30px;
     padding-top: 20px;
@@ -77,7 +116,7 @@ div#entreprise_block div#contenue_entreprise p {
 }
 
 /* Modifie le lien qu'il y a dans le bloc de l'entreprise */
-div#entreprise_block div#contenue_entreprise p a {
+div#entreprise_block div#contenu_entreprise p a {
     text-decoration: none;
     color: darkorange;
     font-size: 25px;
@@ -180,7 +219,7 @@ div#entreprise_block div#contenue_entreprise p a {
 }
 
 /* Modifie le placement de l'image oeuf avec son texte */
-.contenue_egg {
+.contenu_egg {
     margin: 50px 0;
 }
 
