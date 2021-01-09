@@ -88,17 +88,17 @@ flex-direction: column;
 }
 
 @media (max-width:999px){
-#contact div {
-    display: block;
+    #contact div {
+        display: block;
     }
-#contact fieldset{
-    display :block;
-    margin-bottom: 15px;
-}
-#prof img{
-    display : none;
-}
-#commande img {
-    display : none;
-}
+    #contact fieldset{
+        display :block;
+        margin-bottom: 15px;
+    }
+    #prof img{
+        display : none;
+    }
+    #commande img {
+        display : none;
+    }
 }
