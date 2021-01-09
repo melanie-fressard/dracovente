@@ -30,8 +30,6 @@
 /*****************************/
 
 
-
-
 /*APARENCE GLOBALE*/
 
 body {
@@ -40,7 +38,6 @@ body {
     background-repeat: no-repeat;       /*Si on prend un écrant plus grand que le fond, empèche celui-ci de se duppliquer*/
     background-color: black;     /*Quand l'image ne peut pas prendre toute la page, met un fond noir à la place*/
 }
-
 
 
 main {/*Le main contient toutes les informations spécifiques à chaque page*/
@@ -70,7 +67,6 @@ h1 {
 	padding: auto;
     border: #3A3F43 double thick;    /*Ajoute une bordure*/
     border-radius: 30px;    /*Arrondi de la bordure*/
-
 }
 
 
@@ -87,9 +83,9 @@ textarea {       /*Fait en sorte que les zones de textes s'affichent toujours av
 
 /******************/
 
+
  /*Le FOOTER*/
  
-
  footer.absolu{/*Permet un bon affichage des pages trop vides*/
          position: absolute;
          bottom: 10px;
@@ -98,7 +94,7 @@ textarea {       /*Fait en sorte que les zones de textes s'affichent toujours av
  footer{
      display: none;
  }
- /*********************************/
+ /*****************/
 
 /*L'ANCRE*/
 #ancre {        /*Place l'ancre, qui permet de remonter en haut des page*/
@@ -298,9 +294,6 @@ a#ancre>img {       /*Configure la taille de l'ancre*/
 
 @media (max-width:700px){
 
-
-
-
         /*LES FORMULAIRES*/
     
     /*Change l'apparence des inputs */
@@ -316,10 +309,8 @@ a#ancre>img {       /*Configure la taille de l'ancre*/
     /**********************/
 
 
-
-
-
     /*L'ANCRE*/
+
     #ancre {
         top : 87%;
         left: 85%;
@@ -331,10 +322,6 @@ a#ancre>img {       /*Configure la taille de l'ancre*/
     }
     /*********************/
 }
-
-
-
-
 
 
 @media (max-width: 480px){/*Pour les très petits écrans, on supprime l'image de fond afin d'avoir la meilleure visibilité posible*/
