@@ -51,6 +51,13 @@ main {/*Le main contient toutes les informations spécifiques à chaques pages*/
 }
 
 
+header a:-webkit-any-link {     /*Change la couleur des liens du header qu'il soit burger ou non*/
+    font-family: fredoka, Arial Black; /*Change la police d'écriture*/
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /****************************************/
 
 
@@ -239,6 +246,7 @@ a#ancre>img {       /*Configure la taille de l'ancre*/
     
     
         /*LE HEADER AVEC BURGER*/
+
         .menuSansBurger{
             display: none;
         }
@@ -291,16 +299,7 @@ a#ancre>img {       /*Configure la taille de l'ancre*/
 
 @media (max-width:700px){
 
-    /*HEADER*/
 
-
-    header a:-webkit-any-link {     /*Change la couleur des liens du header*/
-        font-family: fredoka, Arial Black; /*Change la police d'écriture*/
-        color: white;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    /***********************/
 
 
         /*LES FORMULAIRES*/
