@@ -42,6 +42,10 @@ fieldset{ /*Met le fond en gris et arrondit les coins*/
     border-radius:8px;
 }
 
+#date{
+    margin-bottom: 15px;
+}
+
 #commande{
     display: flex;
     flex-direction: column;
@@ -69,7 +73,7 @@ fieldset{ /*Met le fond en gris et arrondit les coins*/
     align-items: flex-start;
 }
 
-#contact aside {
+#contact div {
     display: flex;
     justify-content: space-between;
 }
@@ -80,11 +84,12 @@ flex-direction: column;
 }
 
 @media (max-width:999px){
-#contact aside {
+#contact div {
     display: block;
     }
 #contact fieldset{
     display :block;
+    margin-bottom: 15px;
 }
 #prof img{
     display : none;
