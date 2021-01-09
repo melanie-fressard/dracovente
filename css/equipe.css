@@ -32,29 +32,27 @@ h2 {
     display: flex;
 }
 
-.photoAGauche{
-    display: flex;
+.photo{
     flex-direction: column;
     align-self: center;
 }
 
-.paragrapheADroite {
+.description {
 	text-indent: 15px; /*Alinéa*/
     text-align: justify;
 }
 
-@media (max-width: 999px){
+
+@media (max-width: 768px){
 	.photoETdescription {
     	display: block;
 	}
 
-	.photoAGauche{
-    	display: block;
+	.photo {
+    	margin-left: auto;
 	}
 
-	.paragrapheADroite {
-		display: block;
-	}
+	
 }
 
 /*La note concernant Enzo se psitionne sous la photo*/

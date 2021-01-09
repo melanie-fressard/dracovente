@@ -3,13 +3,13 @@
 /*Centrer les puces*/
 #un, #deux, #trois, #quatre, #cinq, #six, #sept, #huit, #neuf, #dix, #onze {text-align: center;}
 
-div.reponse {
+div.questionEtReponse {
 	margin-bottom: 20px;
-	display: block;
 	padding: 5px 15px;
 	border: 1px solid black;
 }
 
+/*Les questions prennent la couleur bleu*/
 h2 {
 	color: #4043A4;
 }

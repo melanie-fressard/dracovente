@@ -112,7 +112,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
 }
 
 
-@media (min-width:999px){   /*Si la largeur de l'écran est suppérieur à 999px*/
+@media (min-width:992px){   /*Si la largeur de l'écran est supérieure à 992px*/
 
     header {                 /*Header sans burger*/
         display: flex;      /*Utilisation du flex dans le header*/
@@ -181,7 +181,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         border-bottom-right-radius: 0px;
     }
 
-    header .burger{/*Cache le burger*/
+    header .burger{     /*Cache le burger*/
         display: none;
     }
 
@@ -194,7 +194,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
 
 
 
-@media (max-width:999px) {/*On fera une copie de la taille au dessus pour la plupart des truc*/
+@media (max-width:992px) {/*On fera une copie de la taille au-dessus pour la plupart des designs responsives*/
     body{
         background-size: 100%;
     }
@@ -257,13 +257,12 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header*/
         color: var(--header-link-hover);
     }
 
- }
+}
 
 
- @media (max-width: 480px){/*Pour les très petits ecrants, on supprime l'image de fond afin d'avoir la meilleure visibilité posible*/
+@media (max-width: 480px){/*Pour les très petits écrans, on supprime l'image de fond afin d'avoir la meilleure visibilité posible*/
     body{
         background-image: none;
-        /*background-color: var(--main-color-bg);*/
     }
 
     main{
