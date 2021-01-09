@@ -49,7 +49,7 @@ main {/*Le main contient toutes les informations spécifiques à chaque page*/
 
 
 header a:-webkit-any-link {     /*Change la couleur des liens du header qu'il soit burger ou non*/
-    font-family: fredoka, Arial Black; /*Change la police d'écriture*/
+    font-family: "fredoka" ,"Arial Black"; /*Change la police d'écriture*/
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -60,7 +60,7 @@ header a:-webkit-any-link {     /*Change la couleur des liens du header qu'il so
 
 /*LE TEXTE*/
 h1 {
-    font-family: fredoka, Arial Black;    /*Change la police d'écriture*/
+    font-family: "fredoka", "Arial Black";    /*Change la police d'écriture*/
     background-color: #3D7DCA;    /*Change la couleur d'arrière-plan en bleu*/
     color: white;    /*Change la couleur du texte en blanc*/
     text-align: center;	/*Met le texte au centre*/
