@@ -64,7 +64,6 @@ h1 {
     background-color: #3D7DCA;    /*Change la couleur d'arrière-plan en bleu*/
     color: white;    /*Change la couleur du texte en blanc*/
     text-align: center;	/*Met le texte au centre*/
-	padding: auto;
     border: #3A3F43 double thick;    /*Ajoute une bordure*/
     border-radius: 30px;    /*Arrondi de la bordure*/
 }
